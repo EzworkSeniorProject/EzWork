@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ezwork-dev-235741-authRole",
+      "UnauthRoleArn": "arn:aws:iam::487312301250:role/amplify-ezwork-dev-235741-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::487312301250:role/amplify-ezwork-dev-235741-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ezwork-dev-235741-deployment",
+      "UnauthRoleName": "amplify-ezwork-dev-235741-unauthRole",
+      "StackName": "amplify-ezwork-dev-235741",
+      "StackId": "arn:aws:cloudformation:us-east-1:487312301250:stack/amplify-ezwork-dev-235741/0e133360-2d6c-11ec-aa75-0af34432e3cb",
+      "AmplifyAppId": "d20f9ulzxb4j3x"
+    }
+  }
+}
