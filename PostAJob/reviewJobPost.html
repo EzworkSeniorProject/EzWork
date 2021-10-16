@@ -213,8 +213,57 @@
             <h4>Category</h4>
             <div class="reviewCategory">
                 <p id="selectedCategory"></p>
-                <i class="fa fa-pencil"></i>
+                <i class="fa fa-pencil" onclick="openCard()"></i>
             </div>
+            
+            <div id="settingsOverlay" class="settingsOverlay">
+                <div class="editCategoryContainer">
+                    <div class="editCategoryHeader">
+                        <h3>Edit Category</h3>
+                        <i class="fa fa-times" aria-hidden="true" onclick="closeCard()"></i>
+                    </div>
+                    <div class="editCategoryBody">
+                        <h4>Category</h4>
+                        <select name="category" id="categoryID">
+                            <option selected value="AccountingConsulting">Accounting & Consulting</option>
+                            <option value="AdminSupport">Admin Support</option>
+                            <option value="CustomerService">Customer Service</option>
+                            <option value="DataScienceAnalytics">Data Science & Analytics</option>
+                            <option value="DesignCreative">Design & Creative</option>
+                            <option value="EngineeringArchitecture">Engineering & Architecture</option>
+                            <option value="ITNetworking">IT & Networking</option>
+                            <option value="Legal">Legal</option>
+                            <option value="SalesMarketing">Sales & Marketing</option>
+                            <option value="Translation">Translation</option>
+                            <option value="WebMobileSoftwareDev">Web, Mobile & Software Dev</option>
+                            <option value="Writing">Writing</option>
+                        </select>
+                        <h4>Specialty</h4>
+                        <div class="salesMarketingSpecialtyCard">
+                            <select name="trSpecialty" id="allTranslationSpecialty">
+                            </select>
+                        </div>
+                        <div class="translationSpecialtyCard">
+                            <select name="translationSpecialty" id="allTranslationSpecialty">
+                            </select>
+                        </div>
+                        <div class="webMobileDevSpecialtyCard">
+                            <select name="webMobileDevSpecialty" id="allWebMobileDevSpecialty">
+                            </select>
+                        </div>
+                        <div class="writingSpecialtyCard">
+                            <select name="writingSpecialty" id="allWritingSpecialty">
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="editCategorySubmit">
+                        <button id="cancelEdit" onclick="closeCard()">Cancel</button>
+                        <button id="applyEdit">Apply</button>
+                    </div>
+                </div>
+            </div>
+
             <h4>Skills</h4>
             <div class="reviewSkill">
                 <p id="selectedSkills"></p>
@@ -296,6 +345,10 @@
     </div>
                 <!--DataList-->
                 <datalist id="allskills">
+                </datalist>
+
+                <!Datalist for Categories-->
+                <datalist id="allWritingSpecialty">            
                 </datalist>
 </body>
 <!--Nav bar script-->
@@ -390,6 +443,16 @@
         }
     }
 
+</script>
+
+<script>
+    function openCard() {
+      document.getElementById("settingsOverlay").style.display = "block";
+    }
+    
+    function closeCard() {
+      document.getElementById("settingsOverlay").style.display = "none";
+    }
 </script>
 
 <script src="./reviewJob.js"></script>

@@ -2516,9 +2516,9 @@ header {
   .header-container .burger .line1,
   .header-container .burger .line2,
   .header-container .burger .line3 {
-    width: 1.7rem;
-    height: 0.3rem;
-    margin: 0.3rem;
+    width: 2.1rem;
+    height: 0.25rem;
+    margin: 0.4rem;
     border-radius: 5px;
     background: #054e97;
     pointer-events: none;
@@ -5388,7 +5388,7 @@ section .container .login .login-container button:hover {
   .profile-header-container .profileHeader .burger .line1,
   .profile-header-container .profileHeader .burger .line2,
   .profile-header-container .profileHeader .burger .line3 {
-    width: 2rem;
+    width: 2.1rem;
     height: 0.25rem;
     margin: 0.4rem;
     border-radius: 5px;
@@ -10763,6 +10763,123 @@ ul {
 
 .reviewJobPost-container .buttonCard .continue #postJob:hover {
   background: #0a345e;
+}
+
+.settingsOverlay {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.settingsOverlay .editCategoryContainer {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  background: white;
+  border-radius: 15px;
+  min-width: 37rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.settingsOverlay .editCategoryContainer .editCategoryHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 0rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.7px solid lightgrey;
+}
+
+.settingsOverlay .editCategoryContainer .editCategoryHeader h3 {
+  font-size: 1.3rem;
+}
+
+.settingsOverlay .editCategoryContainer .editCategoryHeader i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #797979;
+}
+
+.settingsOverlay .editCategoryContainer .editCategoryBody {
+  width: 100%;
+}
+
+.settingsOverlay .editCategoryContainer .editCategoryBody h4 {
+  color: black;
+  font-size: 0.9rem;
+  padding: 0.5rem 0rem;
+}
+
+.settingsOverlay .editCategoryContainer .editCategoryBody select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+}
+
+.settingsOverlay .editCategoryContainer .editCategorySubmit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem 0rem;
+}
+
+.settingsOverlay .editCategoryContainer .editCategorySubmit #cancelEdit {
+  color: #0a345e;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.settingsOverlay .editCategoryContainer .editCategorySubmit #cancelEdit:hover {
+  text-decoration: underline;
+}
+
+.settingsOverlay .editCategoryContainer .editCategorySubmit #applyEdit {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  background: #054e97;
+  padding: 0.5rem 1.25rem;
+  border-radius: 15px;
+  border: 0.6px solid #0a345e;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 754px) {
