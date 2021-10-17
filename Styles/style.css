@@ -10836,12 +10836,31 @@ ul {
   padding: 0.5rem 0rem;
 }
 
+.settingsOverlay .editCategoryContainer .editCategoryBody .adminSupportSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .customerServiceSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .dataScienceAnalyticsSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .designCreativeSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .engineeringArchitectureSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .itNetworkSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .legalSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .salesMarketingSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .translationSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .webMobileDevSpecialtyCard,
+.settingsOverlay .editCategoryContainer .editCategoryBody .writingSpecialtyCard {
+  display: none;
+}
+
 .settingsOverlay .editCategoryContainer .editCategoryBody select {
   margin: 0.5rem 0rem;
   width: 60%;
   border-radius: 10px;
   border: 0.6px solid lightgrey;
   padding: 0.5rem;
+  cursor: pointer;
+}
+
+.settingsOverlay .editCategoryContainer .editCategoryBody select:hover {
+  border: 0.6px solid #054e97;
 }
 
 .settingsOverlay .editCategoryContainer .editCategorySubmit {
@@ -10878,7 +10897,7 @@ ul {
   background: #054e97;
   padding: 0.5rem 1.25rem;
   border-radius: 15px;
-  border: 0.6px solid #0a345e;
+  border: none;
   cursor: pointer;
 }
 

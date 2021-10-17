@@ -98,19 +98,6 @@ postJob.addEventListener("click", () => {
   }
 });
 
-//"Admin Support"
-const AdminSupportSpecialty = [
-  "Virtual/Administrative Assistance",
-  "Data Entry",
-  "Project Management",
-  "Transcription",
-  "Order Processing",
-  "Online Research",
-];
-
-//"Customer Service"
-const CustomerServiceSpecialty = ["Customer Service", "Tech Support "];
-
 //"Data Science & Analytics"
 const DataScienceAnalyticsSpecialty = [
   "Data Mining",
@@ -125,6 +112,19 @@ const DataScienceAnalyticsSpecialty = [
   "Experimentation & Testing",
   "A/B Testing",
 ];
+
+const dataScienceAnalyticsDatalist = document.getElementById(
+  "allDataScienceAnalyticsSpecialty"
+);
+
+for (let i = 0; i < DataScienceAnalyticsSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = DataScienceAnalyticsSpecialty[i];
+
+  dataScienceAnalyticsDatalist.appendChild(option);
+}
 
 //"Writing"
 const WritingSpecialty = [
@@ -415,4 +415,43 @@ for (let i = 0; i < DesignCreativeSpecialty.length; i++) {
   option.innerText = DesignCreativeSpecialty[i];
 
   designCreativeDatalist.appendChild(option);
+}
+
+//"Admin Support"
+const AdminSupportSpecialty = [
+  "Virtual/Administrative Assistance",
+  "Data Entry",
+  "Project Management",
+  "Transcription",
+  "Order Processing",
+  "Online Research",
+];
+
+const adminSupportDatalist = document.getElementById(
+  "allAdminSupportSpecialty"
+);
+
+for (let i = 0; i < AdminSupportSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = AdminSupportSpecialty[i];
+
+  adminSupportDatalist.appendChild(option);
+}
+
+//"Customer Service"
+const CustomerServiceSpecialty = ["Customer Service", "Tech Support "];
+
+const customerServiceDatalist = document.getElementById(
+  "allCustomerServiceSpecialty"
+);
+
+for (let i = 0; i < CustomerServiceSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = CustomerServiceSpecialty[i];
+
+  customerServiceDatalist.appendChild(option);
 }
