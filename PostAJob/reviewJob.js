@@ -98,22 +98,6 @@ postJob.addEventListener("click", () => {
   }
 });
 
-//"Accounting & Consulting'
-const AccountingConsultingSpecialty = [
-  "Business Analysis",
-  "Management Consulting",
-  "Instructional Design",
-  "HR Administration",
-  "Recruiting",
-  "Training & Development",
-  "Lifestyle Coaching",
-  "Tax Preparation",
-  "Bookkeeping",
-  "Accounting",
-  "Financial Management/CFO",
-  "Financial Analysis & Modeling",
-];
-
 //"Admin Support"
 const AdminSupportSpecialty = [
   "Virtual/Administrative Assistance",
@@ -141,6 +125,245 @@ const DataScienceAnalyticsSpecialty = [
   "Experimentation & Testing",
   "A/B Testing",
 ];
+
+//"Writing"
+const WritingSpecialty = [
+  "Editing & Proofreading",
+  "Career Coaching",
+  "Scriptwriting",
+  "Creative Writing",
+  "Ghostwriting",
+  "Grant Writing",
+  "Technical Writing",
+  "Writing Tutoring",
+  "Business Writing",
+  "Content Writing",
+  "Copywriting",
+];
+
+const WritingSpecialtyDatalist = document.getElementById("allWritingSpecialty");
+
+for (let i = 0; i < WritingSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = WritingSpecialty[i];
+
+  WritingSpecialtyDatalist.appendChild(option);
+}
+
+//"Web, Mobile & Software Dev"
+const WebMobileSoftwareSpecialty = [
+  "Ecommerce Development",
+  "Desktop Software Development",
+  "Scripting & Automation",
+  "Manual Testing",
+  "Automation Testing",
+  "Mobile App Development",
+  "Mobile Game Development",
+  "Prototyping",
+  "Mobile Design",
+  "Web Design",
+  "User Research",
+  "UX/UI Design",
+  "Firmware Development",
+  "Emerging Tech",
+  "AR/VR Development",
+  "Coding Tutoring",
+  "Database Development",
+  "Scrum Master",
+  "Product Management",
+  "Back-End Development",
+  "Front-End Development",
+  "Full Stack Development",
+  "CMS Development",
+  "Game Development",
+];
+const webMobileDevDatalist = document.getElementById(
+  "allWebMobileDevSpecialty"
+);
+
+for (let i = 0; i < WebMobileSoftwareSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = WebMobileSoftwareSpecialty[i];
+
+  webMobileDevDatalist.appendChild(option);
+}
+
+//"Translation"
+const TranslationSpecialty = [
+  "Legal Translation",
+  "Technical Translation",
+  "Language Tutoring",
+  "Translation",
+  "Language Localization",
+  "Medical Translation",
+];
+
+const translationDatalist = document.getElementById("allTranslationSpecialty");
+
+for (let i = 0; i < TranslationSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = TranslationSpecialty[i];
+
+  translationDatalist.appendChild(option);
+}
+
+//"Sales & Marketing"
+const SalesMarketingSpecialty = [
+  "Social Media Strategy",
+  "Marketing Strategy",
+  "Content Strategy",
+  "Brand Strategy",
+  "Public Relations",
+  "Social Media Marketing",
+  "Market Research",
+  "Community Management",
+  "Email Marketing",
+  "Marketing Automation",
+  "Campaign Management",
+  "Digital Marketing",
+  "Search Engine Optimization",
+  "Telemarketing",
+  "Search Engine Marketing",
+  "Lead Generation",
+  "Sales & Business Development",
+];
+
+const salesMarketingDatalist = document.getElementById(
+  "allSalesMarketingSpecialty"
+);
+
+for (let i = 0; i < SalesMarketingSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = SalesMarketingSpecialty[i];
+
+  salesMarketingDatalist.appendChild(option);
+}
+
+//"Legal"
+const LegalSpecialty = [
+  "Business & Corporate Law",
+  "General Counsel",
+  "Tax Law",
+  "Labor & Employment Law",
+  "International Law",
+  "Regulatory Law",
+  "Securities & Finance Law",
+  "Immigration Law",
+  "Intellectual Property Law",
+  "Paralegal",
+];
+
+const legalDatalist = document.getElementById("allLegalSpecialty");
+
+for (let i = 0; i < LegalSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = LegalSpecialty[i];
+
+  legalDatalist.appendChild(option);
+}
+
+//"IT & Networking"
+const ITNetworkingSpecialty = [
+  "Network Security",
+  "IT Compliance",
+  "Information Security",
+  "Database Administration",
+  "Cloud Engineering",
+  "Solutions Architecture",
+  "IT Support",
+  "DevOps Engineering",
+  "Business Applications Development",
+  "Systems Engineering",
+  "Systems Administration",
+  "Network Administration",
+];
+const itNetworkDatalist = document.getElementById("allItNetworkSpecialty");
+
+for (let i = 0; i < ITNetworkingSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = ITNetworkingSpecialty[i];
+
+  itNetworkDatalist.appendChild(option);
+}
+
+//"Engineering & Architecture
+const EngineeringArchitectureSpeciality = [
+  "Structural Engineering",
+  "Building Information Modeling",
+  "Civil Engineering",
+  "3D Modeling & Rendering",
+  "CAD",
+  "Landscape Architecture",
+  "Architecture",
+  "Interior Design",
+  "Trade Show Design",
+  "Mechanical Engineering",
+  "Chemical & Process Engineering",
+  "STEM Tutoring",
+  "Energy Engineering",
+  "Electronic Engineering",
+  "Electrical Engineering",
+  "Physics",
+  "Mathematics",
+  "Biology",
+  "Chemistry",
+  "Logistics & Supply Chain Management",
+  "Sourcing & Procurement",
+];
+
+const engineeringArchitectureDatalist = document.getElementById(
+  "allEngineeringArchitectureSpecialty"
+);
+
+for (let i = 0; i < EngineeringArchitectureSpeciality.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = EngineeringArchitectureSpeciality[i];
+
+  engineeringArchitectureDatalist.appendChild(option);
+}
+
+//"Accounting & Consulting'
+const AccountingConsultingSpecialty = [
+  "Business Analysis",
+  "Management Consulting",
+  "Instructional Design",
+  "HR Administration",
+  "Recruiting",
+  "Training & Development",
+  "Lifestyle Coaching",
+  "Tax Preparation",
+  "Bookkeeping",
+  "Accounting",
+  "Financial Management/CFO",
+  "Financial Analysis & Modeling",
+];
+
+const accoutingConsultingDatalist = document.getElementById(
+  "allAccoutingConsultingSpecialty"
+);
+
+for (let i = 0; i < AccountingConsultingSpecialty.length; i++) {
+  var option = document.createElement("option");
+
+  //option.value = WritingSpecialty[i];
+  option.innerText = AccountingConsultingSpecialty[i];
+
+  accoutingConsultingDatalist.appendChild(option);
+}
 
 //"Design & Creative",
 const DesignCreativeSpecialty = [
@@ -181,166 +404,15 @@ const DesignCreativeSpecialty = [
   "Local Photography ",
 ];
 
-//"Engineering & Architecture
-const EngineeringArchitectureSpeciality = [
-  "Structural Engineering",
-  "Building Information Modeling",
-  "Civil Engineering",
-  "3D Modeling & Rendering",
-  "CAD",
-  "Landscape Architecture",
-  "Architecture",
-  "Interior Design",
-  "Trade Show Design",
-  "Mechanical Engineering",
-  "Chemical & Process Engineering",
-  "STEM Tutoring",
-  "Energy Engineering",
-  "Electronic Engineering",
-  "Electrical Engineering",
-  "Physics",
-  "Mathematics",
-  "Biology",
-  "Chemistry",
-  "Logistics & Supply Chain Management",
-  "Sourcing & Procurement",
-];
-
-//"IT & Networking"
-const ITNetworkingSpecialty = [
-  "Network Security",
-  "IT Compliance",
-  "Information Security",
-  "Database Administration",
-  "Cloud Engineering",
-  "Solutions Architecture",
-  "IT Support",
-  "DevOps Engineering",
-  "Business Applications Development",
-  "Systems Engineering",
-  "Systems Administration",
-  "Network Administration",
-];
-
-//"Legal"
-const LegalSpecialty = [
-  "Business & Corporate Law",
-  "General Counsel",
-  "Tax Law",
-  "Labor & Employment Law",
-  "International Law",
-  "Regulatory Law",
-  "Securities & Finance Law",
-  "Immigration Law",
-  "Intellectual Property Law",
-  "Paralegal",
-];
-
-//"Sales & Marketing"
-const SalesMarketingSpecialty = [
-  "Social Media Strategy",
-  "Marketing Strategy",
-  "Content Strategy",
-  "Brand Strategy",
-  "Public Relations",
-  "Social Media Marketing",
-  "Market Research",
-  "Community Management",
-  "Email Marketing",
-  "Marketing Automation",
-  "Campaign Management",
-  "Digital Marketing",
-  "Search Engine Optimization",
-  "Telemarketing",
-  "Search Engine Marketing",
-  "Lead Generation",
-  "Sales & Business Development",
-];
-
-//"Translation"
-const TranslationSpecialty = [
-  "Legal Translation",
-  "Technical Translation",
-  "Language Tutoring",
-  "Translation",
-  "Language Localization",
-  "Medical Translation",
-];
-
-//"Web, Mobile & Software Dev"
-const WebMobileSoftwareSpecialty = [
-  "Ecommerce Development",
-  "Desktop Software Development",
-  "Scripting & Automation",
-  "Manual Testing",
-  "Automation Testing",
-  "Mobile App Development",
-  "Mobile Game Development",
-  "Prototyping",
-  "Mobile Design",
-  "Web Design",
-  "User Research",
-  "UX/UI Design",
-  "Firmware Development",
-  "Emerging Tech",
-  "AR/VR Development",
-  "Coding Tutoring",
-  "Database Development",
-  "Scrum Master",
-  "Product Management",
-  "Back-End Development",
-  "Front-End Development",
-  "Full Stack Development",
-  "CMS Development",
-  "Game Development",
-];
-
-//"Writing"
-const WritingSpecialty = [
-  "Editing & Proofreading",
-  "Career Coaching",
-  "Scriptwriting",
-  "Creative Writing",
-  "Ghostwriting",
-  "Grant Writing",
-  "Technical Writing",
-  "Writing Tutoring",
-  "Business Writing",
-  "Content Writing",
-  "Copywriting",
-];
-
-const WritingSpecialtyDatalist = document.getElementById("allWritingSpecialty");
-
-for (let i = 0; i < WritingSpecialty.length; i++) {
-  var option = document.createElement("option");
-
-  //option.value = WritingSpecialty[i];
-  option.innerText = WritingSpecialty[i];
-
-  WritingSpecialtyDatalist.appendChild(option);
-}
-
-const webMobileDevDatalist = document.getElementById(
-  "allWebMobileDevSpecialty"
+const designCreativeDatalist = document.getElementById(
+  "allDesignCreativeSpecialty"
 );
 
-for (let i = 0; i < WebMobileSoftwareSpecialty.length; i++) {
+for (let i = 0; i < DesignCreativeSpecialty.length; i++) {
   var option = document.createElement("option");
 
   //option.value = WritingSpecialty[i];
-  option.innerText = WebMobileSoftwareSpecialty[i];
+  option.innerText = DesignCreativeSpecialty[i];
 
-  webMobileDevDatalist.appendChild(option);
-}
-
-const translationDatalist = document.getElementById("allTranslationSpecialty");
-
-for (let i = 0; i < TranslationSpecialty.length; i++) {
-  var option = document.createElement("option");
-
-  //option.value = WritingSpecialty[i];
-  option.innerText = TranslationSpecialty[i];
-
-  translationDatalist.appendChild(option);
+  designCreativeDatalist.appendChild(option);
 }
