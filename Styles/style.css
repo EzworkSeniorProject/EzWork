@@ -10779,7 +10779,7 @@ ul {
 
 .settingsOverlay .editCategoryContainer {
   position: fixed;
-  top: 25%;
+  top: 20%;
   left: 25%;
   background: white;
   border-radius: 15px;
@@ -10836,6 +10836,11 @@ ul {
   padding: 0.5rem 0rem;
 }
 
+.settingsOverlay .editCategoryContainer .editCategoryBody .accoutingConsultingSpecialtyCard {
+  display: inline-block;
+  width: 100%;
+}
+
 .settingsOverlay .editCategoryContainer .editCategoryBody .adminSupportSpecialtyCard,
 .settingsOverlay .editCategoryContainer .editCategoryBody .customerServiceSpecialtyCard,
 .settingsOverlay .editCategoryContainer .editCategoryBody .dataScienceAnalyticsSpecialtyCard,
@@ -10848,6 +10853,40 @@ ul {
 .settingsOverlay .editCategoryContainer .editCategoryBody .webMobileDevSpecialtyCard,
 .settingsOverlay .editCategoryContainer .editCategoryBody .writingSpecialtyCard {
   display: none;
+  width: 100%;
+}
+
+.settingsOverlay .editCategoryContainer .editCategoryBody .adminSupportSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .customerServiceSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .dataScienceAnalyticsSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .designCreativeSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .engineeringArchitectureSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .itNetworkSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .legalSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .salesMarketingSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .translationSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .webMobileDevSpecialtyCard select,
+.settingsOverlay .editCategoryContainer .editCategoryBody .writingSpecialtyCard select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.settingsOverlay .editCategoryContainer .editCategoryBody .adminSupportSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .customerServiceSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .dataScienceAnalyticsSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .designCreativeSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .engineeringArchitectureSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .itNetworkSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .legalSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .salesMarketingSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .translationSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .webMobileDevSpecialtyCard select:hover,
+.settingsOverlay .editCategoryContainer .editCategoryBody .writingSpecialtyCard select:hover {
+  border: 0.6px solid #054e97;
 }
 
 .settingsOverlay .editCategoryContainer .editCategoryBody select {

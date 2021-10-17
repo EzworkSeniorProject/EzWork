@@ -455,3 +455,324 @@ for (let i = 0; i < CustomerServiceSpecialty.length; i++) {
 
   customerServiceDatalist.appendChild(option);
 }
+
+// Adding functionality to the edit category
+const categorySelect = document.getElementById("categoryID");
+
+// Get all specialty cards
+const accoutingConsultingSpecialtyCard = document.querySelector(
+  ".accoutingConsultingSpecialtyCard"
+);
+const adminSupportSpecialtyCard = document.querySelector(
+  ".adminSupportSpecialtyCard"
+);
+const customerServiceSpecialtyCard = document.querySelector(
+  ".customerServiceSpecialtyCard"
+);
+const dataScienceAnalyticsSpecialtyCard = document.querySelector(
+  ".dataScienceAnalyticsSpecialtyCard"
+);
+const designCreativeSpecialtyCard = document.querySelector(
+  ".designCreativeSpecialtyCard"
+);
+const engineeringArchitectureSpecialtyCard = document.querySelector(
+  ".engineeringArchitectureSpecialtyCard"
+);
+const itNetworkSpecialtyCard = document.querySelector(
+  ".itNetworkSpecialtyCard"
+);
+const legalSpecialtyCard = document.querySelector(".legalSpecialtyCard");
+
+const salesMarketingSpecialtyCard = document.querySelector(
+  ".salesMarketingSpecialtyCard"
+);
+const translationSpecialtyCard = document.querySelector(
+  ".translationSpecialtyCard"
+);
+const webMobileDevSpecialtyCard = document.querySelector(
+  ".webMobileDevSpecialtyCard"
+);
+const writingSpecialtyCard = document.querySelector(".writingSpecialtyCard");
+
+const e = document.getElementById("categoryID");
+e.addEventListener("input", () => {
+  var value = e.options[e.selectedIndex].value;
+  var text = e.options[e.selectedIndex].text;
+
+  //console.log(text);
+
+  if (text == "Accounting & Consulting") {
+    accoutingConsultingSpecialtyCard.style.display = "inline-block";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Admin Support") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "inline-block";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Customer Service") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "inline-block";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Data Science & Analytics") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "inline-block";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Design & Creative") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "inline-block";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Engineering & Architecture") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "inline-block";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "IT & Networking") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "inline-block";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Legal") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "inline-block";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Sales & Marketing") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "inline-block";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Translation") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "inline-block";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Web, Mobile & Software Dev") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "inline-block";
+    writingSpecialtyCard.style.display = "none";
+  } else if (text == "Writing") {
+    accoutingConsultingSpecialtyCard.style.display = "none";
+    adminSupportSpecialtyCard.style.display = "none";
+    customerServiceSpecialtyCard.style.display = "none";
+    dataScienceAnalyticsSpecialtyCard.style.display = "none";
+    designCreativeSpecialtyCard.style.display = "none";
+    engineeringArchitectureSpecialtyCard.style.display = "none";
+    itNetworkSpecialtyCard.style.display = "none";
+    legalSpecialtyCard.style.display = "none";
+    salesMarketingSpecialtyCard.style.display = "none";
+    translationSpecialtyCard.style.display = "none";
+    webMobileDevSpecialtyCard.style.display = "none";
+    writingSpecialtyCard.style.display = "inline-block";
+  }
+});
+
+const currentCategorySpan = document.getElementById("currentCategory");
+currentCategorySpan.innerText = localStorage.getItem("category");
+
+const a = document.getElementById("allAccoutingConsultingSpecialty");
+a.addEventListener("input", () => {
+  var value = a.options[a.selectedIndex].value;
+  var text = a.options[a.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const b = document.getElementById("allAdminSupportSpecialty");
+b.addEventListener("input", () => {
+  var value = b.options[b.selectedIndex].value;
+  var text = b.options[b.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const c = document.getElementById("allCustomerServiceSpecialty");
+c.addEventListener("input", () => {
+  var value = c.options[c.selectedIndex].value;
+  var text = c.options[c.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const d = document.getElementById("allDataScienceAnalyticsSpecialty");
+d.addEventListener("input", () => {
+  var value = d.options[d.selectedIndex].value;
+  var text = d.options[d.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const f = document.getElementById("allDataScienceAnalyticsSpecialty");
+f.addEventListener("input", () => {
+  var value = f.options[f.selectedIndex].value;
+  var text = f.options[f.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const g = document.getElementById("allDesignCreativeSpecialty");
+g.addEventListener("input", () => {
+  var value = g.options[g.selectedIndex].value;
+  var text = g.options[g.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const h = document.getElementById("allEngineeringArchitectureSpecialty");
+h.addEventListener("input", () => {
+  var value = h.options[h.selectedIndex].value;
+  var text = h.options[h.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const i = document.getElementById("allItNetworkSpecialty");
+i.addEventListener("input", () => {
+  var value = i.options[i.selectedIndex].value;
+  var text = i.options[i.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const j = document.getElementById("allLegalSpecialty");
+j.addEventListener("input", () => {
+  var value = j.options[j.selectedIndex].value;
+  var text = j.options[j.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const k = document.getElementById("allSalesMarketingSpecialty");
+k.addEventListener("input", () => {
+  var value = k.options[k.selectedIndex].value;
+  var text = k.options[k.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const l = document.getElementById("allTranslationSpecialty");
+l.addEventListener("input", () => {
+  var value = l.options[l.selectedIndex].value;
+  var text = l.options[l.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const m = document.getElementById("allWebMobileDevSpecialty");
+m.addEventListener("input", () => {
+  var value = m.options[m.selectedIndex].value;
+  var text = m.options[m.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+const n = document.getElementById("allWritingSpecialty");
+n.addEventListener("input", () => {
+  var value = n.options[n.selectedIndex].value;
+  var text = n.options[n.selectedIndex].text;
+  currentCategorySpan.innerText = text;
+
+  localStorage.setItem("category", text);
+});
+
+const closeEditCategoryCard = document.getElementById("settingsOverlay");
+const applyEdit = document.getElementById("applyEdit");
+applyEdit.addEventListener("click", () => {
+  closeEditCategoryCard.style.display = "none";
+  const selectedCategory = (document.getElementById(
+    "selectedCategory"
+  ).innerText = localStorage.getItem("category"));
+});
