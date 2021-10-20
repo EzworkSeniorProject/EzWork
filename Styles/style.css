@@ -10768,7 +10768,7 @@ ul {
 .settingsOverlay {
   height: 100%;
   width: 100%;
-  display: inline-block;
+  display: none;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -10930,6 +10930,706 @@ ul {
 }
 
 .settingsOverlay .editCategoryContainer .editCategorySubmit #applyEdit {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  background: #054e97;
+  padding: 0.5rem 1.25rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.skillsOverlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.skillsOverlay .editSkillsContainer {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  background: white;
+  border-radius: 15px;
+  min-width: 50%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 0rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.7px solid lightgrey;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsHeader h3 {
+  font-size: 1.3rem;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsHeader i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #797979;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody {
+  width: 100%;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody h4 {
+  color: black;
+  font-size: 0.9rem;
+  padding: 0.5rem 0rem;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .accoutingConsultingSpecialtyCard {
+  display: inline-block;
+  width: 100%;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .adminSupportSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .customerServiceSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .dataScienceAnalyticsSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .designCreativeSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .engineeringArchitectureSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .itNetworkSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .legalSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .salesMarketingSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .translationSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .webMobileDevSpecialtyCard,
+.skillsOverlay .editSkillsContainer .editSkillsBody .writingSpecialtyCard {
+  display: none;
+  width: 100%;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .adminSupportSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .customerServiceSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .dataScienceAnalyticsSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .designCreativeSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .engineeringArchitectureSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .itNetworkSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .legalSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .salesMarketingSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .translationSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .webMobileDevSpecialtyCard select,
+.skillsOverlay .editSkillsContainer .editSkillsBody .writingSpecialtyCard select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .adminSupportSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .customerServiceSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .dataScienceAnalyticsSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .designCreativeSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .engineeringArchitectureSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .itNetworkSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .legalSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .salesMarketingSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .translationSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .webMobileDevSpecialtyCard select:hover,
+.skillsOverlay .editSkillsContainer .editSkillsBody .writingSpecialtyCard select:hover {
+  border: 0.6px solid #054e97;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody select:hover {
+  border: 0.6px solid #054e97;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsSubmit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem 0rem;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsSubmit #cancelEdit {
+  color: #0a345e;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsSubmit #cancelEdit:hover {
+  text-decoration: underline;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsSubmit #applyEdit {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  background: #054e97;
+  padding: 0.5rem 1.25rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.scopeOverlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.scopeOverlay .editScopeContainer {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  background: white;
+  border-radius: 15px;
+  min-width: 50%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scopeOverlay .editScopeContainer .editScopeHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 0rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.7px solid lightgrey;
+}
+
+.scopeOverlay .editScopeContainer .editScopeHeader h3 {
+  font-size: 1.3rem;
+}
+
+.scopeOverlay .editScopeContainer .editScopeHeader i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #797979;
+}
+
+.scopeOverlay .editScopeContainer .editScopeBody {
+  width: 100%;
+}
+
+.scopeOverlay .editScopeContainer .editScopeBody h4 {
+  color: black;
+  font-size: 0.9rem;
+  padding: 0.5rem 0rem;
+}
+
+.scopeOverlay .editScopeContainer .editScopeBody .accoutingConsultingSpecialtyCard {
+  display: inline-block;
+  width: 100%;
+}
+
+.scopeOverlay .editScopeContainer .editScopeBody .adminSupportSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .customerServiceSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .dataScienceAnalyticsSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .designCreativeSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .engineeringArchitectureSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .itNetworkSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .legalSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .salesMarketingSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .translationSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .webMobileDevSpecialtyCard,
+.scopeOverlay .editScopeContainer .editScopeBody .writingSpecialtyCard {
+  display: none;
+  width: 100%;
+}
+
+.scopeOverlay .editScopeContainer .editScopeBody .adminSupportSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .customerServiceSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .dataScienceAnalyticsSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .designCreativeSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .engineeringArchitectureSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .itNetworkSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .legalSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .salesMarketingSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .translationSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .webMobileDevSpecialtyCard select,
+.scopeOverlay .editScopeContainer .editScopeBody .writingSpecialtyCard select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.scopeOverlay .editScopeContainer .editScopeBody .adminSupportSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .customerServiceSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .dataScienceAnalyticsSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .designCreativeSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .engineeringArchitectureSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .itNetworkSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .legalSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .salesMarketingSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .translationSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .webMobileDevSpecialtyCard select:hover,
+.scopeOverlay .editScopeContainer .editScopeBody .writingSpecialtyCard select:hover {
+  border: 0.6px solid #054e97;
+}
+
+.scopeOverlay .editScopeContainer .editScopeBody select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.scopeOverlay .editScopeContainer .editScopeBody select:hover {
+  border: 0.6px solid #054e97;
+}
+
+.scopeOverlay .editScopeContainer .editScopeSubmit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem 0rem;
+}
+
+.scopeOverlay .editScopeContainer .editScopeSubmit #cancelEdit {
+  color: #0a345e;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.scopeOverlay .editScopeContainer .editScopeSubmit #cancelEdit:hover {
+  text-decoration: underline;
+}
+
+.scopeOverlay .editScopeContainer .editScopeSubmit #applyEdit {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  background: #054e97;
+  padding: 0.5rem 1.25rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.locationOverlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.locationOverlay .editLocationContainer {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  background: white;
+  border-radius: 15px;
+  min-width: 50%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.locationOverlay .editLocationContainer .editLocationHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 0rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.7px solid lightgrey;
+}
+
+.locationOverlay .editLocationContainer .editLocationHeader h3 {
+  font-size: 1.3rem;
+}
+
+.locationOverlay .editLocationContainer .editLocationHeader i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #797979;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody {
+  width: 100%;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody h4 {
+  color: black;
+  font-size: 0.9rem;
+  padding: 0.5rem 0rem;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .accoutingConsultingSpecialtyCard {
+  display: inline-block;
+  width: 100%;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .adminSupportSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .customerServiceSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .dataScienceAnalyticsSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .designCreativeSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .engineeringArchitectureSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .itNetworkSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .legalSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .salesMarketingSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .translationSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .webMobileDevSpecialtyCard,
+.locationOverlay .editLocationContainer .editLocationBody .writingSpecialtyCard {
+  display: none;
+  width: 100%;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .adminSupportSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .customerServiceSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .dataScienceAnalyticsSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .designCreativeSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .engineeringArchitectureSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .itNetworkSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .legalSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .salesMarketingSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .translationSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .webMobileDevSpecialtyCard select,
+.locationOverlay .editLocationContainer .editLocationBody .writingSpecialtyCard select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .adminSupportSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .customerServiceSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .dataScienceAnalyticsSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .designCreativeSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .engineeringArchitectureSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .itNetworkSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .legalSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .salesMarketingSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .translationSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .webMobileDevSpecialtyCard select:hover,
+.locationOverlay .editLocationContainer .editLocationBody .writingSpecialtyCard select:hover {
+  border: 0.6px solid #054e97;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody select:hover {
+  border: 0.6px solid #054e97;
+}
+
+.locationOverlay .editLocationContainer .editLocationSubmit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem 0rem;
+}
+
+.locationOverlay .editLocationContainer .editLocationSubmit #cancelEdit {
+  color: #0a345e;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.locationOverlay .editLocationContainer .editLocationSubmit #cancelEdit:hover {
+  text-decoration: underline;
+}
+
+.locationOverlay .editLocationContainer .editLocationSubmit #applyEdit {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  background: #054e97;
+  padding: 0.5rem 1.25rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.budgetOverlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.budgetOverlay .editBudgetContainer {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  background: white;
+  border-radius: 15px;
+  min-width: 50%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 0rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.7px solid lightgrey;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetHeader h3 {
+  font-size: 1.3rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetHeader i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #797979;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody {
+  width: 100%;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody h4 {
+  color: black;
+  font-size: 0.9rem;
+  padding: 0.5rem 0rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .accoutingConsultingSpecialtyCard {
+  display: inline-block;
+  width: 100%;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .adminSupportSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .customerServiceSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .dataScienceAnalyticsSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .designCreativeSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .engineeringArchitectureSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .itNetworkSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .legalSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .salesMarketingSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .translationSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .webMobileDevSpecialtyCard,
+.budgetOverlay .editBudgetContainer .editBudgetBody .writingSpecialtyCard {
+  display: none;
+  width: 100%;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .adminSupportSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .customerServiceSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .dataScienceAnalyticsSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .designCreativeSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .engineeringArchitectureSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .itNetworkSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .legalSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .salesMarketingSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .translationSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .webMobileDevSpecialtyCard select,
+.budgetOverlay .editBudgetContainer .editBudgetBody .writingSpecialtyCard select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .adminSupportSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .customerServiceSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .dataScienceAnalyticsSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .designCreativeSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .engineeringArchitectureSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .itNetworkSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .legalSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .salesMarketingSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .translationSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .webMobileDevSpecialtyCard select:hover,
+.budgetOverlay .editBudgetContainer .editBudgetBody .writingSpecialtyCard select:hover {
+  border: 0.6px solid #054e97;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody select {
+  margin: 0.5rem 0rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 0.6px solid lightgrey;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody select:hover {
+  border: 0.6px solid #054e97;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetSubmit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem 0rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetSubmit #cancelEdit {
+  color: #0a345e;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetSubmit #cancelEdit:hover {
+  text-decoration: underline;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetSubmit #applyEdit {
   margin-left: 1rem;
   color: white;
   font-size: 1rem;
@@ -13186,6 +13886,164 @@ ul {
   }
   .reviewJobPost-container .buttonCard .continue #postJob:hover {
     background: #0a345e;
+  }
+  .settingsOverlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .settingsOverlay .editCategoryContainer {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    background: white;
+    border-radius: 0;
+    min-width: 100%;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem 0rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    border-bottom: 0.7px solid lightgrey;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryHeader h3 {
+    font-size: 1.3rem;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryHeader i {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #797979;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryBody {
+    width: 100%;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryBody h4 {
+    color: black;
+    font-size: 0.9rem;
+    padding: 0.5rem 0rem;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryBody .accoutingConsultingSpecialtyCard {
+    display: inline-block;
+    width: 100%;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryBody .adminSupportSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .customerServiceSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .dataScienceAnalyticsSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .designCreativeSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .engineeringArchitectureSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .itNetworkSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .legalSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .salesMarketingSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .translationSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .webMobileDevSpecialtyCard,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .writingSpecialtyCard {
+    display: none;
+    width: 100%;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryBody .adminSupportSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .customerServiceSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .dataScienceAnalyticsSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .designCreativeSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .engineeringArchitectureSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .itNetworkSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .legalSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .salesMarketingSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .translationSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .webMobileDevSpecialtyCard select,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .writingSpecialtyCard select {
+    margin: 0.5rem 0rem;
+    width: 60%;
+    border-radius: 10px;
+    border: 0.6px solid lightgrey;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryBody .adminSupportSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .customerServiceSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .dataScienceAnalyticsSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .designCreativeSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .engineeringArchitectureSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .itNetworkSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .legalSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .salesMarketingSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .translationSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .webMobileDevSpecialtyCard select:hover,
+  .settingsOverlay .editCategoryContainer .editCategoryBody .writingSpecialtyCard select:hover {
+    border: 0.6px solid #054e97;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryBody select {
+    margin: 0.5rem 0rem;
+    width: 60%;
+    border-radius: 10px;
+    border: 0.6px solid lightgrey;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .settingsOverlay .editCategoryContainer .editCategoryBody select:hover {
+    border: 0.6px solid #054e97;
+  }
+  .settingsOverlay .editCategoryContainer .editCategorySubmit {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0.5rem 0rem;
+  }
+  .settingsOverlay .editCategoryContainer .editCategorySubmit #cancelEdit {
+    color: #0a345e;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .settingsOverlay .editCategoryContainer .editCategorySubmit #cancelEdit:hover {
+    text-decoration: underline;
+  }
+  .settingsOverlay .editCategoryContainer .editCategorySubmit #applyEdit {
+    margin-left: 1rem;
+    color: white;
+    font-size: 1rem;
+    background: #054e97;
+    padding: 0.5rem 1.25rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=style.css.map */

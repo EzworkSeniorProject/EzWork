@@ -28,12 +28,20 @@
         </div>
         <div class="mobileNavCard" id="navProfile">
             <img src="../Users/user.svg" alt="">
-            <span id="user">John Doe</span>
+            <span id="user"></span>
             <i class="fa fa-sort-down"></i>
         </div>
-        <div class="mobileNavCard">
+        <div class="mobileNavCard" id="mobile-job-card" onclick="toggleJobCard(this)">
             <p>Jobs</p>
-            <i class="fa fa-sort-down"></i>
+            <i class="fa fa-sort-down" id="jobArrow"></i>
+        </div>
+        <div class="mobileJobCard">
+            <ul>
+                <a href="./index.html"><li>My Jobs</li></a>
+                <a href="#/"><li>All Job Posts</li></a>
+                <a href="#/"><li>All Contracts</li></a>
+                <a href="../PostAJob/PostAJob.html"><li>Post A Job</li></a>
+            </ul>
         </div>
         <div class="mobileNavCard">
             <p>Talent</p>
@@ -164,7 +172,7 @@
                                 <img src="../Users/user.svg" id="profileImage3" alt="">
                             </div>
                             <div class="name">
-                                <span id="name">John Doe</span>
+                                <span id="name"></span>
                                 <span id="type">Client</span>
                             </div>
                         </div>
@@ -300,23 +308,91 @@
             <h4>Skills</h4>
             <div class="reviewSkill">
                 <p id="selectedSkills"></p>
-                <i class="fa fa-pencil"></i>
+                <i class="fa fa-pencil"  onclick="openSkills()"></i>
             </div>
+
+            <div id="skillsOverlay" class="skillsOverlay">
+                <div class="editSkillsContainer">
+                    <div class="editSkillsHeader">
+                        <h3>Edit Skills</h3>
+                        <i class="fa fa-times" aria-hidden="true" onclick="closeSkills()"></i>
+                    </div>
+                    <div class="editSkillsBody">
+                    </div>
+
+                    <div class="editSkillsSubmit">
+                        <button id="cancelEdit" onclick="closeSkills()">Cancel</button>
+                        <button id="applyEdit">Apply</button>
+                    </div>
+                </div>
+            </div>
+
             <h4>Scope</h4>
             <div class="reviewScope">
                 <p id="selectedScope"></p>
-                <i class="fa fa-pencil"></i>
+                <i class="fa fa-pencil" onclick="openScope()"></i>
             </div>
+
+            <div id="scopeOverlay" class="scopeOverlay">
+                <div class="editScopeContainer">
+                    <div class="editScopeHeader">
+                        <h3>Edit Scope</h3>
+                        <i class="fa fa-times" aria-hidden="true" onclick="closeScope()"></i>
+                    </div>
+                    <div class="editScopeBody">
+                    </div>
+
+                    <div class="editScopeSubmit">
+                        <button id="cancelEdit" onclick="closeScope()">Cancel</button>
+                        <button id="applyEdit">Apply</button>
+                    </div>
+                </div>
+            </div>
+
             <h4>Location</h4>
             <div class="reviewLocation">
                 <p id="selectedLocation"></p>
-                <i class="fa fa-pencil"></i>
+                <i class="fa fa-pencil" onclick="openLocation()"></i>
             </div>
+
+            <div id="locationOverlay" class="locationOverlay">
+                <div class="editLocationContainer">
+                    <div class="editLocationHeader">
+                        <h3>Edit Location</h3>
+                        <i class="fa fa-times" aria-hidden="true" onclick="closeLocation()"></i>
+                    </div>
+                    <div class="editLocationBody">
+                    </div>
+
+                    <div class="editLocationSubmit">
+                        <button id="cancelEdit" onclick="closeLocation()">Cancel</button>
+                        <button id="applyEdit">Apply</button>
+                    </div>
+                </div>
+            </div>
+
             <h4>Budget</h4>
             <div class="reviewBudget">
                 <p id="selectedBudget"></p>
-                <i class="fa fa-pencil"></i>
+                <i class="fa fa-pencil" onclick="openBudget()"></i>
             </div>
+
+            <div id="budgetOverlay" class="budgetOverlay">
+                <div class="editBudgetContainer">
+                    <div class="editBudgetHeader">
+                        <h3>Edit Budget</h3>
+                        <i class="fa fa-times" aria-hidden="true" onclick="closeBudget()"></i>
+                    </div>
+                    <div class="editBudgetBody">
+                    </div>
+
+                    <div class="editBudgetSubmit">
+                        <button id="cancelEdit" onclick="closeBudget()">Cancel</button>
+                        <button id="applyEdit">Apply</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="buttonCard">
             <div class="back">
@@ -475,9 +551,20 @@
             searchIcon.style.opacity='1';
         }
     }
-
 </script>
-
+<script>
+const sortDownBtn = document.getElementById('jobArrow');
+async function toggleJobCard(){
+    var mobileJobCard = document.querySelector(".mobileJobCard"); 
+    if (mobileJobCard.style.display === "none") {
+        sortDownBtn.style.transform = "rotate(180deg)";
+        mobileJobCard.style.display = "inline-block";
+    } else {
+        mobileJobCard.style.display = "none";
+        sortDownBtn.style.transform = "rotate(360deg)";
+    }
+}
+</script>
 <script>
     function openCard() {
       document.getElementById("settingsOverlay").style.display = "block";
@@ -485,6 +572,34 @@
     
     function closeCard() {
       document.getElementById("settingsOverlay").style.display = "none";
+    }
+    
+    function openSkills(){
+        document.getElementById("skillsOverlay").style.display = "block";
+    }
+    function closeSkills(){
+        document.getElementById("skillsOverlay").style.display = "none";
+    }
+
+    function openScope(){
+        document.getElementById("scopeOverlay").style.display = "block";
+    }
+    function closeScope(){
+        document.getElementById("scopeOverlay").style.display = "none";
+    }
+
+    function openLocation(){
+        document.getElementById("locationOverlay").style.display = "block";
+    }
+    function closeLocation(){
+        document.getElementById("locationOverlay").style.display = "none";
+    }
+
+    function openBudget(){
+        document.getElementById("budgetOverlay").style.display = "block";
+    }
+    function closeBudget(){
+        document.getElementById("budgetOverlay").style.display = "none";
     }
 </script>
 

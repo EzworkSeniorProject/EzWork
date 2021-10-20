@@ -520,7 +520,7 @@
 </script>
 <script>
 const sortDownBtn = document.getElementById('jobArrow');
-async function toggleJobCard(){
+function toggleJobCard(){
     var mobileJobCard = document.querySelector(".mobileJobCard"); 
     if (mobileJobCard.style.display === "none") {
         sortDownBtn.style.transform = "rotate(180deg)";
@@ -530,20 +530,6 @@ async function toggleJobCard(){
         sortDownBtn.style.transform = "rotate(360deg)";
     }
 }
+</script>
 
-</script>
-<script>
-function showCustomer(str) {
-  if (str == "") {
-    document.getElementById("txtHint").innerHTML = "";
-    return;
-  }
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("txtHint").innerHTML = this.responseText;
-  }
-  xhttp.open("GET", "getdata.php?q="+str);
-  xhttp.send();
-}
-</script>
 </html>
