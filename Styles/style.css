@@ -11628,8 +11628,8 @@ ul {
 
 .locationOverlay .editLocationContainer {
   position: fixed;
-  top: 20%;
-  left: 25%;
+  top: 2%;
+  left: 17%;
   background: white;
   border-radius: 15px;
   min-width: 50%;
@@ -11679,76 +11679,265 @@ ul {
   width: 100%;
 }
 
-.locationOverlay .editLocationContainer .editLocationBody h4 {
-  color: black;
-  font-size: 0.9rem;
-  padding: 0.5rem 0rem;
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.locationOverlay .editLocationContainer .editLocationBody .accoutingConsultingSpecialtyCard {
-  display: inline-block;
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
-.locationOverlay .editLocationContainer .editLocationBody .adminSupportSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .customerServiceSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .dataScienceAnalyticsSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .designCreativeSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .engineeringArchitectureSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .itNetworkSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .legalSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .salesMarketingSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .translationSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .webMobileDevSpecialtyCard,
-.locationOverlay .editLocationContainer .editLocationBody .writingSpecialtyCard {
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions #usOnly {
+  border: 1.25px solid #054e97;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard {
+  width: 100%;
+  height: 26.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem 1rem;
+  border: 1.25px solid lightgrey;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard .choosen {
+  padding: 0.5rem 0.5rem 0rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard .choosen i {
+  font-size: 0.7rem;
+  color: white;
+  padding: 0.2rem;
+  border-radius: 50%;
+  background: white;
+  border: 0.7px solid lightgrey;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard .choosen #usOnly-button {
+  color: #054e97;
+  border: 0.7px solid #054e97;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard .usOnly,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard .worldwide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard .usOnly h4,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard .worldwide h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 1rem 0rem;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard .usOnly p,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard .worldwide p {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #797979;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationOptions .optionCard:hover {
+  background: #f8f6f6;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards {
+  width: 100%;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard {
   display: none;
   width: 100%;
+  padding: 1rem;
 }
 
-.locationOverlay .editLocationContainer .editLocationBody .adminSupportSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .customerServiceSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .dataScienceAnalyticsSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .designCreativeSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .engineeringArchitectureSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .itNetworkSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .legalSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .salesMarketingSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .translationSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .webMobileDevSpecialtyCard select,
-.locationOverlay .editLocationContainer .editLocationBody .writingSpecialtyCard select {
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard h4,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard h4 {
+  font-size: 0.8rem;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard h4 span,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard h4 span {
+  color: #797979;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard .statesPulldown,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard .worldwidePulldown,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard .statesPulldown,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard .worldwidePulldown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 7px;
+  border: none;
+  border: 0.7px solid lightgrey;
+  outline: none;
+  width: 100%;
   margin: 0.5rem 0rem;
-  width: 60%;
-  border-radius: 10px;
-  border: 0.6px solid lightgrey;
-  padding: 0.5rem;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard .statesPulldown input,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard .worldwidePulldown input,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard .statesPulldown input,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard .worldwidePulldown input {
+  outline: none;
+  border: none;
+  width: 100%;
+  margin: 0.3rem 0rem;
+  padding: 0.3rem;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard .statesPulldown #add1,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard .statesPulldown #add2,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard .worldwidePulldown #add1,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard .worldwidePulldown #add2,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard .statesPulldown #add1,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard .statesPulldown #add2,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard .worldwidePulldown #add1,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard .worldwidePulldown #add2 {
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  color: #054e97;
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 
-.locationOverlay .editLocationContainer .editLocationBody .adminSupportSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .customerServiceSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .dataScienceAnalyticsSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .designCreativeSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .engineeringArchitectureSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .itNetworkSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .legalSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .salesMarketingSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .translationSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .webMobileDevSpecialtyCard select:hover,
-.locationOverlay .editLocationContainer .editLocationBody .writingSpecialtyCard select:hover {
-  border: 0.6px solid #054e97;
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .usOnlyCard span,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .locationsCards .worldwideCard span {
+  color: #797979;
+  font-size: 0.8rem;
 }
 
-.locationOverlay .editLocationContainer .editLocationBody select {
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsUSCard,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsWorldwideCard {
+  display: none;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: lightgrey 0.7px solid;
+  border-radius: 10px;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsUSCard h5,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsWorldwideCard h5 {
+  width: 100%;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsUSCard .selectedLocationsUS,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsUSCard .selectedLocationsWorldwide,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsUS,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsWorldwide {
   margin: 0.5rem 0rem;
-  width: 60%;
-  border-radius: 10px;
-  border: 0.6px solid lightgrey;
-  padding: 0.5rem;
-  cursor: pointer;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.locationOverlay .editLocationContainer .editLocationBody select:hover {
-  border: 0.6px solid #054e97;
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsUSCard .selectedLocationsUS label,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsUSCard .selectedLocationsWorldwide label,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsUS label,
+.locationOverlay .editLocationContainer .editLocationBody .detail-input-section .selectedLocationsWorldwideCard .selectedLocationsWorldwide label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.8rem;
+  background: #0a345e;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
 }
 
 .locationOverlay .editLocationContainer .editLocationSubmit {

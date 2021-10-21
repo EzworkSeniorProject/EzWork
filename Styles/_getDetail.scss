@@ -2436,8 +2436,8 @@
 
   .editLocationContainer {
     position: fixed;
-    top: 20%;
-    left: 25%;
+    top: 2%;
+    left: 17%;
     background: white;
     border-radius: 15px;
     min-width: 50%;
@@ -2466,49 +2466,166 @@
 
     .editLocationBody {
       width: 100%;
-      h4 {
-        color: black;
-        font-size: 0.9rem;
-        padding: 0.5rem 0rem;
-      }
-      .accoutingConsultingSpecialtyCard {
-        display: inline-block;
+      .detail-input-section {
         width: 100%;
-      }
-      .adminSupportSpecialtyCard,
-      .customerServiceSpecialtyCard,
-      .dataScienceAnalyticsSpecialtyCard,
-      .designCreativeSpecialtyCard,
-      .engineeringArchitectureSpecialtyCard,
-      .itNetworkSpecialtyCard,
-      .legalSpecialtyCard,
-      .salesMarketingSpecialtyCard,
-      .translationSpecialtyCard,
-      .webMobileDevSpecialtyCard,
-      .writingSpecialtyCard {
-        display: none;
-        width: 100%;
-        select {
-          margin: 0.5rem 0rem;
-          width: 60%;
-          border-radius: 10px;
-          border: 0.6px solid lightgrey;
-          padding: 0.5rem;
-          cursor: pointer;
-          &:hover {
-            border: 0.6px solid $lightColor;
+        height: 100%;
+        padding: 1rem;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        justify-content: center;
+        align-items: flex-start;
+        .locationOptions {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          #usOnly {
+            border: 1.25px solid $lightColor;
+          }
+          .optionCard {
+            width: 100%;
+            height: 26.5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0.5rem 1rem;
+            border: 1.25px solid lightgrey;
+            border-radius: 9px;
+            cursor: pointer;
+
+            .choosen {
+              padding: 0.5rem 0.5rem 0rem 0rem;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              width: 100%;
+              i {
+                font-size: 0.7rem;
+                color: white;
+                padding: 0.2rem;
+                border-radius: 50%;
+                background: white;
+                border: 0.7px solid lightgrey;
+              }
+              #usOnly-button {
+                color: $lightColor;
+                border: 0.7px solid $lightColor;
+              }
+            }
+
+            .usOnly,
+            .worldwide {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 1rem;
+              h4 {
+                width: 100%;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: lighter;
+                padding: 1rem 0rem;
+              }
+              p {
+                width: 100%;
+                text-align: center;
+                font-size: 0.9rem;
+                color: $darktext;
+              }
+            }
+            &:hover {
+              background: rgb(248, 246, 246);
+            }
           }
         }
-      }
-      select {
-        margin: 0.5rem 0rem;
-        width: 60%;
-        border-radius: 10px;
-        border: 0.6px solid lightgrey;
-        padding: 0.5rem;
-        cursor: pointer;
-        &:hover {
-          border: 0.6px solid $lightColor;
+        .locationsCards {
+          width: 100%;
+          .usOnlyCard,
+          .worldwideCard {
+            display: none;
+            width: 100%;
+            padding: 1rem;
+            h4 {
+              font-size: 0.8rem;
+              span {
+                color: $darktext;
+              }
+            }
+            .statesPulldown,
+            .worldwidePulldown {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              border-radius: 7px;
+              border: none;
+              border: 0.7px solid lightgrey;
+              outline: none;
+              width: 100%;
+              margin: 0.5rem 0rem;
+              input {
+                outline: none;
+                border: none;
+                width: 100%;
+                margin: 0.3rem 0rem;
+                padding: 0.3rem;
+              }
+              #add1,
+              #add2 {
+                font-size: 1rem;
+                border: none;
+                background: transparent;
+                color: $lightColor;
+                cursor: pointer;
+                margin-right: 0.5rem;
+              }
+            }
+            span {
+              color: $darktext;
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        .selectedLocationsUSCard,
+        .selectedLocationsWorldwideCard {
+          display: none;
+          width: 100%;
+          padding: 0.5rem;
+          margin: 0.5rem;
+          border: lightgrey 0.7px solid;
+          border-radius: 10px;
+          h5 {
+            width: 100%;
+            font-size: 0.9rem;
+            text-decoration: underline;
+            font-weight: lighter;
+          }
+          .selectedLocationsUS,
+          .selectedLocationsWorldwide {
+            margin: 0.5rem 0rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            label {
+              width: fit-content;
+              font-size: 0.8rem;
+              background: $color1;
+              color: white;
+              padding: 0.4rem 1rem;
+              border-radius: 15px;
+              border: none;
+              cursor: pointer;
+              margin: 0.5rem;
+            }
+          }
         }
       }
     }
