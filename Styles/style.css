@@ -11967,7 +11967,7 @@ ul {
   text-decoration: underline;
 }
 
-.locationOverlay .editLocationContainer .editLocationSubmit #applyEdit {
+.locationOverlay .editLocationContainer .editLocationSubmit #applyLocationEdit {
   margin-left: 1rem;
   color: white;
   font-size: 1rem;

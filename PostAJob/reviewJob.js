@@ -2327,3 +2327,16 @@ addBtn2.addEventListener("click", () => {
 });
 
 const EmptyArrayError = document.getElementById("emptyArray");
+
+const closeEditLocationCard = document.getElementById("locationOverlay");
+
+const applyLocationEdit = document.getElementById("applyLocationEdit");
+applyLocationEdit.addEventListener("click", () => {
+  closeEditLocationCard.style.display = "none";
+
+  localStorage.setItem("locations", JSON.stringify(allLocations));
+
+  var currentLocation = localStorage.getItem("locations");
+  var selectedLocation = document.getElementById("selectedLocation");
+  selectedLocation.innerText = JSON.parse(currentLocation);
+});
