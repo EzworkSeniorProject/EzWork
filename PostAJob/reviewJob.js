@@ -1955,6 +1955,41 @@ applyEdit.addEventListener("click", () => {
   ).innerText = localStorage.getItem("category"));
 });
 
+//Review Skill
+const skillForm = document.getElementById("selectedSkillsForm");
+const enterSkill = document.getElementById("enterSkill");
+var input = document.getElementById("skills");
+// array to hold all skills
+const skillArray = [];
+enterSkill.addEventListener("click", () => {
+  if (input.value === "") {
+    emptyError.innerText = "Please enter a skill.";
+  } else if (skillArray.includes(input.value) === true) {
+    // Ensure duplicates are not entered
+    emptyError.innerText = "Already added!";
+    //console.log("leo");
+  } else {
+    var skillPill = document.createElement("label");
+    //console.log(input.value);
+    skillPill.innerHTML = input.value;
+    skillArray.push(input.value);
+
+    skillForm.appendChild(skillPill);
+    alertMsg.innerText = "(Press on skill to remove)";
+
+    //console.log(skillArray);
+
+    if (skillArray.length > 0) {
+      skillPill.addEventListener("click", () => {
+        skillForm.removeChild(skillPill);
+        skillArray.pop(skillPill.innerHTML);
+        console.log(skillArray);
+      });
+    } else if ((skillArray.length = 0)) {
+    }
+  } // Ends if statment checking if user input is empty
+});
+
 // Review Scope
 // Post Scope Start
 const EditFreelanceExperience = document.getElementById(

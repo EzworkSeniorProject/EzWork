@@ -318,6 +318,20 @@
                         <i class="fa fa-times" aria-hidden="true" onclick="closeSkills()"></i>
                     </div>
                     <div class="editSkillsBody">
+                        <div class="detail-input-section">
+                            <div class="CategorySpecialtyContainer"></div>
+                            <h3>Search Skills or Add your Own</h3>
+                            <div class="skillSearch">
+                                <input type="text" name="skills" id="skills" list="allskills"  autocomplete="off" placeholder="Search Skills or Add Your Own">                  
+                                <button id="enterSkill">Add</button>
+                            </div>
+                            <span id="emptyError" style="color: red;font-size: 0.8rem;"></span>
+                            <p id="SelectedSkillTitle" style="margin-top: 0.5rem;margin-left: 0.5rem;width: 100%;">Selected Skill <span id="alertMsg" style="font-size: 0.8rem;"></span></p>
+                            <form id="selectedSkillsForm" onsubmit="return false">
+                            </form>
+    
+                            <span id="EmptyArrayError" style="color: red;font-size: 1rem;padding: 0.5rem;"></span>
+                        </div>
                     </div>
 
                     <div class="editSkillsSubmit">

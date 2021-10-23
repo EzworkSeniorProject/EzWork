@@ -11005,76 +11005,210 @@ ul {
   width: 100%;
 }
 
-.skillsOverlay .editSkillsContainer .editSkillsBody h4 {
-  color: black;
-  font-size: 0.9rem;
-  padding: 0.5rem 0rem;
-}
-
-.skillsOverlay .editSkillsContainer .editSkillsBody .accoutingConsultingSpecialtyCard {
-  display: inline-block;
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section {
   width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.skillsOverlay .editSkillsContainer .editSkillsBody .adminSupportSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .customerServiceSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .dataScienceAnalyticsSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .designCreativeSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .engineeringArchitectureSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .itNetworkSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .legalSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .salesMarketingSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .translationSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .webMobileDevSpecialtyCard,
-.skillsOverlay .editSkillsContainer .editSkillsBody .writingSpecialtyCard {
-  display: none;
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section h3 {
+  font-size: 1.3rem;
+  padding: 1rem 0rem;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section h4 {
+  padding: 1rem 0rem;
+  font-size: 1.1rem;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section input {
   width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  outline: #0a345e;
+  border: lightgrey 0.7px solid;
+  border-radius: 2px;
 }
 
-.skillsOverlay .editSkillsContainer .editSkillsBody .adminSupportSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .customerServiceSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .dataScienceAnalyticsSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .designCreativeSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .engineeringArchitectureSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .itNetworkSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .legalSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .salesMarketingSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .translationSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .webMobileDevSpecialtyCard select,
-.skillsOverlay .editSkillsContainer .editSkillsBody .writingSpecialtyCard select {
-  margin: 0.5rem 0rem;
-  width: 60%;
-  border-radius: 10px;
-  border: 0.6px solid lightgrey;
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section ul {
+  margin-left: 0.5rem;
+  list-style: circle;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section ul li {
+  padding: 0.4rem 0rem;
+  font-size: 0.87rem;
+  font-weight: lighter;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .skillSearch {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: #0a345e;
+  border: lightgrey 0.7px solid;
+  border-radius: 8px;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .skillSearch i {
+  cursor: pointer;
+  margin-left: 1rem;
+  color: #797979;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .skillSearch input {
+  border: none;
+  border-radius: 15px;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .skillSearch #enterSkill {
+  border: none;
+  color: #054e97;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 1rem;
+  background: transparent;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section #selectedSkillsForm {
   padding: 0.5rem;
+  border-radius: 15px;
+  border: 0.7px solid lightgrey;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section #selectedSkillsForm label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.8rem;
+  background: #0a345e;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  border: 0.6px solid gray;
+  cursor: pointer;
+  margin: 0.4rem;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .selectCategory {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .selectCategory select {
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  outline: #0a345e;
+  border: lightgrey 0.7px solid;
+  border-radius: 10px;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section span {
+  margin-left: 0.5rem;
+  color: #054e97;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .CategorySpecialtyContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .CategorySpecialtyContainer ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .CategorySpecialtyContainer ul li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.8rem;
+  background: #86dd86;
+  color: white;
+  margin: 0.4rem;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  border: none;
   cursor: pointer;
 }
 
-.skillsOverlay .editSkillsContainer .editSkillsBody .adminSupportSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .customerServiceSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .dataScienceAnalyticsSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .designCreativeSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .engineeringArchitectureSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .itNetworkSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .legalSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .salesMarketingSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .translationSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .webMobileDevSpecialtyCard select:hover,
-.skillsOverlay .editSkillsContainer .editSkillsBody .writingSpecialtyCard select:hover {
-  border: 0.6px solid #054e97;
-}
-
-.skillsOverlay .editSkillsContainer .editSkillsBody select {
-  margin: 0.5rem 0rem;
-  width: 60%;
-  border-radius: 10px;
-  border: 0.6px solid lightgrey;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
-.skillsOverlay .editSkillsContainer .editSkillsBody select:hover {
-  border: 0.6px solid #054e97;
+.skillsOverlay .editSkillsContainer .editSkillsBody .detail-input-section .CategorySpecialtyContainer ul li:hover {
+  background: #71c571;
 }
 
 .skillsOverlay .editSkillsContainer .editSkillsSubmit {
