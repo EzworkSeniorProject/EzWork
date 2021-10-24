@@ -1160,7 +1160,8 @@ if (currentBudget.length == 1) {
   selectedBudget.innerText = "$"
     .concat(currentBudget[0])
     .concat("-")
-    .concat("$".concat(currentBudget[1]));
+    .concat("$".concat(currentBudget[1]))
+    .concat(" /hr");
 }
 
 const currentLocation = localStorage.getItem("locations");
@@ -2443,6 +2444,19 @@ const alertBudget = document.getElementById("alertBudget");
 const userBudget = document.getElementById("userBudget");
 const OfficalBudget = document.getElementById("OfficalBudget");
 
+// HOURLY CONTAINER js
+const addMinHourlyBtn = document.getElementById("addMinHourly");
+const addMaxHourlyBtn = document.getElementById("addMaxHourly");
+
+const setMinHourly = document.getElementById("setMinHourly");
+const setMaxHourly = document.getElementById("setMaxHourly");
+
+const alertMinHourly = document.getElementById("alertMinHourly");
+const officialMinRate = document.getElementById("officialMinRate");
+
+const officialMaxRate = document.getElementById("officialMaxRate");
+const MaxError = document.getElementById("MaxError");
+
 //Array
 const budget = [];
 
@@ -2480,6 +2494,9 @@ if (tempBudget.length == 1) {
   hourlyContainer.style.display = "block";
   // Hide budget card
   budgetContainer.style.display = "none";
+
+  officialMinRate.innerText = tempBudget[0];
+  officialMaxRate.innerText = tempBudget[1];
 }
 
 hourlyCard.addEventListener("click", () => {
@@ -2569,21 +2586,11 @@ addMaxBudget.addEventListener("click", () => {
   }
 });
 
-// HOURLY CONTAINER js
-const addMinHourlyBtn = document.getElementById("addMinHourly");
-const addMaxHourlyBtn = document.getElementById("addMaxHourly");
-
-const setMinHourly = document.getElementById("setMinHourly");
-const setMaxHourly = document.getElementById("setMaxHourly");
-
-const alertMinHourly = document.getElementById("alertMinHourly");
-const officialMinRate = document.getElementById("officialMinRate");
-
 addMinHourlyBtn.addEventListener("click", () => {
   if (setMinHourly.value < 3) {
     alertMinHourly.innerHTML =
       `<i class="fa fa-exclamation-circle" aria-hidden="true"></i>`.concat(
-        "The minimum hourly rate on EZwork is $3. Please update your range."
+        "The minimum hourly rate on EZwork is $3."
       );
   } else {
     if (budget.length == 0) {
@@ -2596,14 +2603,11 @@ addMinHourlyBtn.addEventListener("click", () => {
   }
 });
 
-const officialMaxRate = document.getElementById("officialMaxRate");
-const MaxError = document.getElementById("MaxError");
-
 addMaxHourlyBtn.addEventListener("click", () => {
   if (setMaxHourly.value <= officialMinRate.innerText) {
     MaxError.innerHTML =
       `<i class="fa fa-exclamation-circle" aria-hidden="true"></i>`.concat(
-        "Please enter a higher value than the minimum hourly rate."
+        "Please enter a higher value than the minimum pay."
       );
 
     //block review button
@@ -2618,4 +2622,19 @@ addMaxHourlyBtn.addEventListener("click", () => {
   }
 });
 
-//window.location.href = "./reviewJobPost.html";
+const budgetOverlay = document.querySelector(".budgetOverlay");
+const applyBudgetEdit = document.getElementById("applyBudgetEdit");
+applyBudgetEdit.addEventListener("click", () => {
+  localStorage.setItem("budget", JSON.stringify(budget));
+  var testBudget = JSON.parse(localStorage.getItem("budget"));
+  if (testBudget.length == 1) {
+    selectedBudget.innerText = "$".concat(JSON.parse(testBudget));
+  } else {
+    selectedBudget.innerText = "$"
+      .concat(testBudget[0])
+      .concat("-")
+      .concat("$".concat(testBudget[1]))
+      .concat(" /hr");
+  }
+  budgetOverlay.style.display = "none";
+});
