@@ -2578,6 +2578,7 @@ addMaxBudget.addEventListener("click", () => {
     userBudget.innerText = setMaxBudget.value;
     OfficalBudget.style.display = "flex";
 
+    budget.length = 0;
     budget.push(setMaxBudget.value);
   }
 });
@@ -2589,10 +2590,8 @@ addMinHourlyBtn.addEventListener("click", () => {
         "The minimum hourly rate on EZwork is $3."
       );
   } else {
-    hourlyPay.length = 0;
-    hourlyPay.push(setMinHourly.value);
-
-    budget.pop(setMaxBudget.value);
+    budget.length = 0;
+    budget.push(setMinHourly.value);
 
     alertMinHourly.innerHTML = "";
     officialMinRate.innerText = setMinHourly.value;
@@ -2608,9 +2607,7 @@ addMaxHourlyBtn.addEventListener("click", () => {
 
     //block review button
   } else {
-    hourlyPay.push(setMaxHourly.value);
-
-    budget.pop(setMaxBudget.value);
+    budget.push(setMaxHourly.value);
 
     MaxError.innerHTML = "";
     officialMaxRate.innerText = setMaxHourly.value;
@@ -2624,16 +2621,14 @@ applyBudgetEdit.addEventListener("click", () => {
   localStorage.setItem("budget", JSON.stringify(budget));
   var testBudget = JSON.parse(localStorage.getItem("budget"));
 
-  localStorage.setItem("hourlyPay", JSON.stringify(hourlyPay));
-  var testHourlyPay = JSON.parse(localStorage.getItem("hourlyPay"));
   if (testBudget.length == 1) {
     selectedBudget.innerText = "";
     selectedBudget.innerText = "$".concat(JSON.parse(testBudget));
   } else {
     selectedBudget.innerText = "$"
-      .concat(testHourlyPay[0])
+      .concat(testBudget[0])
       .concat("-")
-      .concat("$".concat(testHourlyPay[1]))
+      .concat("$".concat(testBudget[1]))
       .concat(" /hr");
   }
   budgetOverlay.style.display = "none";
