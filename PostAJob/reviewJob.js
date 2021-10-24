@@ -2459,6 +2459,7 @@ const MaxError = document.getElementById("MaxError");
 
 //Array
 const budget = [];
+const hourlyPay = [];
 
 var tempBudget = JSON.parse(localStorage.getItem("budget"));
 //console.log(tempBudget);
@@ -2577,12 +2578,7 @@ addMaxBudget.addEventListener("click", () => {
     userBudget.innerText = setMaxBudget.value;
     OfficalBudget.style.display = "flex";
 
-    if (budget.length == 0) {
-      budget.push(setMaxBudget.value);
-    } else {
-      budget.pop(setMinHourly.value);
-      budget.pop(setMaxHourly.value);
-    }
+    budget.push(setMaxBudget.value);
   }
 });
 
@@ -2593,11 +2589,11 @@ addMinHourlyBtn.addEventListener("click", () => {
         "The minimum hourly rate on EZwork is $3."
       );
   } else {
-    if (budget.length == 0) {
-      budget.push(setMinHourly.value);
-    } else {
-      budget.pop(setMaxBudget.value);
-    }
+    hourlyPay.length = 0;
+    hourlyPay.push(setMinHourly.value);
+
+    budget.pop(setMaxBudget.value);
+
     alertMinHourly.innerHTML = "";
     officialMinRate.innerText = setMinHourly.value;
   }
@@ -2612,9 +2608,10 @@ addMaxHourlyBtn.addEventListener("click", () => {
 
     //block review button
   } else {
-    if (budget.length == 1) {
-      budget.push(setMaxHourly.value);
-    }
+    hourlyPay.push(setMaxHourly.value);
+
+    budget.pop(setMaxBudget.value);
+
     MaxError.innerHTML = "";
     officialMaxRate.innerText = setMaxHourly.value;
   }
@@ -2622,17 +2619,21 @@ addMaxHourlyBtn.addEventListener("click", () => {
 
 const budgetOverlay = document.querySelector(".budgetOverlay");
 const applyBudgetEdit = document.getElementById("applyBudgetEdit");
+
 applyBudgetEdit.addEventListener("click", () => {
   localStorage.setItem("budget", JSON.stringify(budget));
   var testBudget = JSON.parse(localStorage.getItem("budget"));
+
+  localStorage.setItem("hourlyPay", JSON.stringify(hourlyPay));
+  var testHourlyPay = JSON.parse(localStorage.getItem("hourlyPay"));
   if (testBudget.length == 1) {
     selectedBudget.innerText = "";
     selectedBudget.innerText = "$".concat(JSON.parse(testBudget));
   } else {
     selectedBudget.innerText = "$"
-      .concat(testBudget[0])
+      .concat(testHourlyPay[0])
       .concat("-")
-      .concat("$".concat(testBudget[1]))
+      .concat("$".concat(testHourlyPay[1]))
       .concat(" /hr");
   }
   budgetOverlay.style.display = "none";
