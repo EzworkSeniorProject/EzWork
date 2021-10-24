@@ -1151,10 +1151,17 @@ const selectedScope = (document.getElementById("selectedScope").innerText =
     .concat(currentScopeExperience)
     .concat(" experience."));
 
-const currentBudget = localStorage.getItem("budget");
+const currentBudget = JSON.parse(localStorage.getItem("budget"));
 const selectedBudget = document.getElementById("selectedBudget");
 
-selectedBudget.innerText = "$".concat(JSON.parse(currentBudget));
+if (currentBudget.length == 1) {
+  selectedBudget.innerText = "$".concat(JSON.parse(currentBudget));
+} else {
+  selectedBudget.innerText = "$"
+    .concat(currentBudget[0])
+    .concat("-")
+    .concat("$".concat(currentBudget[1]));
+}
 
 const currentLocation = localStorage.getItem("locations");
 const selectedLocation = document.getElementById("selectedLocation");
