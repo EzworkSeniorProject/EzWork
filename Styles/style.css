@@ -12126,7 +12126,7 @@ ul {
 
 .budgetOverlay .editBudgetContainer {
   position: fixed;
-  top: 20%;
+  top: 6%;
   left: 25%;
   background: white;
   border-radius: 15px;
@@ -12177,76 +12177,406 @@ ul {
   width: 100%;
 }
 
-.budgetOverlay .editBudgetContainer .editBudgetBody h4 {
-  color: black;
-  font-size: 0.9rem;
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions #hourly {
+  border: 1.25px solid #054e97;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  border: 1.25px solid #797979;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard .choosen {
+  padding: 0.5rem 0.5rem 0rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard .choosen i {
+  font-size: 0.7rem;
+  color: white;
+  padding: 0.2rem;
+  border-radius: 50%;
+  background: white;
+  border: 0.7px solid lightgrey;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard .choosen #usOnly-button {
+  color: #054e97;
+  border: 0.7px solid #054e97;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard .hourly,
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard .budget {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard .hourly i,
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard .budget i {
+  font-size: 1.5rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard .hourly h4,
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard .budget h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: lighter;
   padding: 0.5rem 0rem;
 }
 
-.budgetOverlay .editBudgetContainer .editBudgetBody .accoutingConsultingSpecialtyCard {
-  display: inline-block;
-  width: 100%;
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetOptions .optionCard:hover {
+  background: #f8f6f6;
 }
 
-.budgetOverlay .editBudgetContainer .editBudgetBody .adminSupportSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .customerServiceSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .dataScienceAnalyticsSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .designCreativeSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .engineeringArchitectureSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .itNetworkSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .legalSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .salesMarketingSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .translationSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .webMobileDevSpecialtyCard,
-.budgetOverlay .editBudgetContainer .editBudgetBody .writingSpecialtyCard {
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer {
+  width: 100%;
+  display: none;
+  padding: 1rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer .addBudget {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0rem 0.5rem;
+  border-radius: 8px;
+  border: 1.5px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer .addBudget span {
+  font-size: 1.2rem;
+  color: #797979;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer .addBudget input {
+  padding: 0.5rem 0rem;
+  margin-left: 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer .addBudget button {
+  border: none;
+  color: #0a345e;
+  cursor: pointer;
+  background: transparent;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer .addBudget:hover {
+  border-radius: 8px;
+  border: 1.5px solid #0a345e;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer #alertBudget {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #cc0404;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer #alertBudget i {
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .budgetContainer #OfficalBudget {
+  display: none;
+  color: #0a345e;
+  margin-top: 1rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer {
   display: none;
   width: 100%;
+  padding: 1rem;
 }
 
-.budgetOverlay .editBudgetContainer .editBudgetBody .adminSupportSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .customerServiceSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .dataScienceAnalyticsSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .designCreativeSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .engineeringArchitectureSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .itNetworkSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .legalSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .salesMarketingSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .translationSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .webMobileDevSpecialtyCard select,
-.budgetOverlay .editBudgetContainer .editBudgetBody .writingSpecialtyCard select {
-  margin: 0.5rem 0rem;
-  width: 60%;
-  border-radius: 10px;
-  border: 0.6px solid lightgrey;
-  padding: 0.5rem;
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer #OfficialRate {
+  color: #0a345e;
+  margin: 1rem 0rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum #alertMinHourly {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #cc0404;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum #alertMinHourly i {
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum p {
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum span {
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly .inputContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0rem 0.5rem;
+  border-radius: 8px;
+  border: 1.5px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly .inputContainer input {
+  padding: 0.3rem 0rem;
+  border: none;
+  outline: none;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly .inputContainer button {
+  border: none;
+  font-size: 1rem;
+  background: transparent;
   cursor: pointer;
+  color: #054e97;
 }
 
-.budgetOverlay .editBudgetContainer .editBudgetBody .adminSupportSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .customerServiceSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .dataScienceAnalyticsSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .designCreativeSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .engineeringArchitectureSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .itNetworkSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .legalSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .salesMarketingSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .translationSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .webMobileDevSpecialtyCard select:hover,
-.budgetOverlay .editBudgetContainer .editBudgetBody .writingSpecialtyCard select:hover {
-  border: 0.6px solid #054e97;
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .minimum .addMinHourly .inputContainer span {
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #797979;
 }
 
-.budgetOverlay .editBudgetContainer .editBudgetBody select {
-  margin: 0.5rem 0rem;
-  width: 60%;
-  border-radius: 10px;
-  border: 0.6px solid lightgrey;
-  padding: 0.5rem;
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum #MaxError {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #cc0404;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum #MaxError i {
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum p {
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum span {
+  font-size: 1rem;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly .inputContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0rem 0.5rem;
+  border-radius: 8px;
+  border: 1.5px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly .inputContainer input {
+  padding: 0.3rem 0rem;
+  border: none;
+  outline: none;
+}
+
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly .inputContainer button {
+  border: none;
+  font-size: 1rem;
+  background: transparent;
   cursor: pointer;
+  color: #054e97;
 }
 
-.budgetOverlay .editBudgetContainer .editBudgetBody select:hover {
-  border: 0.6px solid #054e97;
+.budgetOverlay .editBudgetContainer .editBudgetBody .detail-input-section .hourlyContainer .setHourlyRate .maximum .addMaxHourly .inputContainer span {
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #797979;
 }
 
 .budgetOverlay .editBudgetContainer .editBudgetSubmit {
