@@ -2614,8 +2614,6 @@ addMaxHourlyBtn.addEventListener("click", () => {
   } else {
     if (budget.length == 1) {
       budget.push(setMaxHourly.value);
-    } else {
-      budget.pop(setMaxBudget.value);
     }
     MaxError.innerHTML = "";
     officialMaxRate.innerText = setMaxHourly.value;
@@ -2628,6 +2626,7 @@ applyBudgetEdit.addEventListener("click", () => {
   localStorage.setItem("budget", JSON.stringify(budget));
   var testBudget = JSON.parse(localStorage.getItem("budget"));
   if (testBudget.length == 1) {
+    selectedBudget.innerText = "";
     selectedBudget.innerText = "$".concat(JSON.parse(testBudget));
   } else {
     selectedBudget.innerText = "$"
