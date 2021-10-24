@@ -1961,6 +1961,35 @@ const enterSkill = document.getElementById("enterSkill");
 var input = document.getElementById("skills");
 // array to hold all skills
 const skillArray = [];
+
+const skillsBTN = document.getElementById("skillsBTN");
+const tempSkills = JSON.parse(localStorage.getItem("skills"));
+
+//console.log(tempSkills[0]);
+
+//console.log(tempSkills.length);
+alertMsg.innerText = "(Press on skill to remove)";
+const applySkillEdit = document.getElementById("applySkillEdit");
+for (let i = 0; i < tempSkills.length; i++) {
+  var skillPill = document.createElement("label");
+  skillPill.innerHTML = tempSkills[i];
+
+  skillForm.appendChild(skillPill);
+
+  skillArray.push(skillPill.innerText);
+  // console.log(skillArray);
+
+  if (skillArray.length > 0) {
+    skillPill.addEventListener("click", () => {
+      //console.log("leo");
+      //skillPill.remove();
+      skillForm.removeChild(skillPill);
+      skillArray.pop(skillPill.innerHTML);
+    });
+  }
+  i++;
+}
+
 enterSkill.addEventListener("click", () => {
   if (input.value === "") {
     emptyError.innerText = "Please enter a skill.";
@@ -1983,11 +2012,23 @@ enterSkill.addEventListener("click", () => {
       skillPill.addEventListener("click", () => {
         skillForm.removeChild(skillPill);
         skillArray.pop(skillPill.innerHTML);
-        console.log(skillArray);
+        //console.log(skillArray);
       });
-    } else if ((skillArray.length = 0)) {
     }
   } // Ends if statment checking if user input is empty
+});
+
+const skillsOverlay = document.querySelector(".skillsOverlay");
+applySkillEdit.addEventListener("click", () => {
+  if (skillArray.length > 0) {
+    localStorage.setItem("skills", JSON.stringify(skillArray));
+    skillsOverlay.style.display = "none";
+
+    var userSelectedSkills = localStorage.getItem("skills");
+    selectedSkills.innerText = JSON.parse(userSelectedSkills);
+  } else if (skillArray == 0) {
+    emptyError.innerText = "Please add one skill.";
+  }
 });
 
 // Review Scope

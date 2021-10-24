@@ -308,7 +308,7 @@
             <h4>Skills</h4>
             <div class="reviewSkill">
                 <p id="selectedSkills"></p>
-                <i class="fa fa-pencil"  onclick="openSkills()"></i>
+                <i class="fa fa-pencil" id="skillsBTN" onclick="openSkills()"></i>
             </div>
 
             <div id="skillsOverlay" class="skillsOverlay">
@@ -336,7 +336,7 @@
 
                     <div class="editSkillsSubmit">
                         <button id="cancelEdit" onclick="closeSkills()">Cancel</button>
-                        <button id="applyEdit">Apply</button>
+                        <button id="applySkillEdit">Apply</button>
                     </div>
                 </div>
             </div>
@@ -1057,6 +1057,7 @@ async function toggleJobCard(){
     }
 }
 </script>
+<!--THe edit pencil buttons, opens the edit container-->
 <script>
     function openCard() {
       document.getElementById("settingsOverlay").style.display = "block";
