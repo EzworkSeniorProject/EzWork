@@ -17651,17 +17651,529 @@ li {
 
 .registerFreelancer #registerForm .hourlyRate {
   display: none;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-container-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 1.5rem;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-container-title h2 {
+  font-size: 2rem;
+  color: #0a345e;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card input {
+  padding: 0rem .5rem;
+  width: 75%;
+  font-size: 1rem;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 0rem;
+  color: #054e97;
+  font-size: 1.5rem;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card a i {
+  padding-right: .2rem;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card p {
+  font-size: 1rem;
+  color: #797979;
+  padding: 0.5rem 0rem;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #backToExpertise {
+  width: 20%;
+  text-align: center;
+  margin: 1rem 0rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+  color: #0a345e;
+  border-radius: 15px;
+  background: transparent;
+  border: 0.7px solid #0a345e;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #backToExpertise:hover {
+  background: whitesmoke;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #nextStepEmployment {
+  width: 20%;
+  text-align: center;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+  color: white;
+  border-radius: 15px;
+  background: #054e97;
+}
+
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #nextStepEmployment:hover {
+  background: #0a345e;
 }
 
 .registerFreelancer #registerForm .titleDescription {
   display: none;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-container-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 1.5rem;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-container-title h2 {
+  font-size: 2rem;
+  color: #0a345e;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card input {
+  padding: 0rem .5rem;
+  width: 75%;
+  font-size: 1rem;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 0rem;
+  color: #054e97;
+  font-size: 1.5rem;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card a i {
+  padding-right: .2rem;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card p {
+  font-size: 1rem;
+  color: #797979;
+  padding: 0.5rem 0rem;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #backToExpertise {
+  width: 20%;
+  text-align: center;
+  margin: 1rem 0rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+  color: #0a345e;
+  border-radius: 15px;
+  background: transparent;
+  border: 0.7px solid #0a345e;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #backToExpertise:hover {
+  background: whitesmoke;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #nextStepEmployment {
+  width: 20%;
+  text-align: center;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+  color: white;
+  border-radius: 15px;
+  background: #054e97;
+}
+
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #nextStepEmployment:hover {
+  background: #0a345e;
 }
 
 .registerFreelancer #registerForm .profilePhoto {
   display: none;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.registerFreelancer #registerForm .location {
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-container-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 1.5rem;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-container-title h2 {
+  font-size: 2rem;
+  color: #0a345e;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card input {
+  padding: 0rem .5rem;
+  width: 75%;
+  font-size: 1rem;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 0rem;
+  color: #054e97;
+  font-size: 1.5rem;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card a i {
+  padding-right: .2rem;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card p {
+  font-size: 1rem;
+  color: #797979;
+  padding: 0.5rem 0rem;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #backToExpertise {
+  width: 20%;
+  text-align: center;
+  margin: 1rem 0rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+  color: #0a345e;
+  border-radius: 15px;
+  background: transparent;
+  border: 0.7px solid #0a345e;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #backToExpertise:hover {
+  background: whitesmoke;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #nextStepEmployment {
+  width: 20%;
+  text-align: center;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+  color: white;
+  border-radius: 15px;
+  background: #054e97;
+}
+
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #nextStepEmployment:hover {
+  background: #0a345e;
+}
+
+.registerFreelancer #registerForm .locationCard {
   display: none;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-container-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 1.5rem;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-container-title h2 {
+  font-size: 2rem;
+  color: #0a345e;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card input {
+  padding: 0rem .5rem;
+  width: 75%;
+  font-size: 1rem;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 0rem;
+  color: #054e97;
+  font-size: 1.5rem;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card a i {
+  padding-right: .2rem;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card p {
+  font-size: 1rem;
+  color: #797979;
+  padding: 0.5rem 0rem;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #backToExpertise {
+  width: 20%;
+  text-align: center;
+  margin: 1rem 0rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+  color: #0a345e;
+  border-radius: 15px;
+  background: transparent;
+  border: 0.7px solid #0a345e;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #backToExpertise:hover {
+  background: whitesmoke;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #nextStepEmployment {
+  width: 20%;
+  text-align: center;
+  margin: 1rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+  color: white;
+  border-radius: 15px;
+  background: #054e97;
+}
+
+.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #nextStepEmployment:hover {
+  background: #0a345e;
 }
 /*# sourceMappingURL=style.css.map */

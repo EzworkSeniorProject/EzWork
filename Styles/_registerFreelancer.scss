@@ -416,15 +416,375 @@ $darktext: rgb(121, 121, 121);
       }
       .hourlyRate{
           display: none;
+          width: 100%;
+          height: fit-content;
+          .hourlyRate-container{
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              .hourlyRate-container-title{
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  border-bottom: 1px solid lightgray;
+                  padding: 1.5rem;
+                  h2{
+                      font-size: 2rem;
+                      color: $color1;
+                  }
+              }
+              .hourlyRate-card{
+                  width: 100%;
+                  height: fit-content;
+                  padding: 1.5rem;
+                  display: flex;
+                  flex-direction: column;
+  
+                  h3{
+                      font-size: 1.5rem;
+                      padding: 1rem 0rem;
+                  }
+  
+                  input{
+                      padding: 0rem .5rem;
+                      width: 75%;
+                      font-size: 1rem;
+                  }
+  
+                  a{
+                      width: fit-content;
+                      padding: 0.5rem 0rem;
+                      color: $lightColor;
+                      font-size: 1.5rem;
+                      i{
+                          padding-right: .2rem;
+                      }
+                  }
+  
+                  p{
+                      font-size: 1rem;
+                      color: $darktext;
+                      padding: 0.5rem 0rem;
+                  }
+                  .stepButtons{
+                      display: flex;
+                      flex-direction: row;
+                      width: 100%;
+                      align-items: center;
+                      justify-content: flex-start;
+  
+                      #backToExpertise{
+                          width: 20%;
+                          text-align: center;
+                          margin: 1rem 0rem;
+                          cursor: pointer;
+                          font-size: 1rem;
+                          padding:0.5rem 0rem;
+                          color: $color1;
+                          border-radius: 15px;
+                          background: transparent;
+                          border: .7px solid $color1;
+                          &:hover{
+                            background: whitesmoke;
+                          }
+                      }
+                      #nextStepEmployment{
+                          width: 20%;
+                          text-align: center;
+                          margin: 1rem 1rem;
+                          cursor: pointer;
+                          font-size: 1rem;
+                          padding:0.5rem 0rem;
+                          color: white;
+                          border-radius: 15px;
+                          background: $lightColor;
+                          &:hover{
+                            background: $color1;
+                          }
+                      }
+                  }
+                  
+              }
+          }
       }
       .titleDescription{
           display: none;
+          width: 100%;
+          height: fit-content;
+          .titleDescription-container{
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              .titleDescription-container-title{
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  border-bottom: 1px solid lightgray;
+                  padding: 1.5rem;
+                  h2{
+                      font-size: 2rem;
+                      color: $color1;
+                  }
+              }
+              .titleDescription-card{
+                  width: 100%;
+                  height: fit-content;
+                  padding: 1.5rem;
+                  display: flex;
+                  flex-direction: column;
+  
+                  h3{
+                      font-size: 1.5rem;
+                      padding: 1rem 0rem;
+                  }
+  
+                  input{
+                      padding: 0rem .5rem;
+                      width: 75%;
+                      font-size: 1rem;
+                  }
+  
+                  a{
+                      width: fit-content;
+                      padding: 0.5rem 0rem;
+                      color: $lightColor;
+                      font-size: 1.5rem;
+                      i{
+                          padding-right: .2rem;
+                      }
+                  }
+  
+                  p{
+                      font-size: 1rem;
+                      color: $darktext;
+                      padding: 0.5rem 0rem;
+                  }
+                  .stepButtons{
+                      display: flex;
+                      flex-direction: row;
+                      width: 100%;
+                      align-items: center;
+                      justify-content: flex-start;
+  
+                      #backToExpertise{
+                          width: 20%;
+                          text-align: center;
+                          margin: 1rem 0rem;
+                          cursor: pointer;
+                          font-size: 1rem;
+                          padding:0.5rem 0rem;
+                          color: $color1;
+                          border-radius: 15px;
+                          background: transparent;
+                          border: .7px solid $color1;
+                          &:hover{
+                            background: whitesmoke;
+                          }
+                      }
+                      #nextStepEmployment{
+                          width: 20%;
+                          text-align: center;
+                          margin: 1rem 1rem;
+                          cursor: pointer;
+                          font-size: 1rem;
+                          padding:0.5rem 0rem;
+                          color: white;
+                          border-radius: 15px;
+                          background: $lightColor;
+                          &:hover{
+                            background: $color1;
+                          }
+                      }
+                  }
+                  
+              }
+          }
       }
       .profilePhoto{
           display: none;
+          width: 100%;
+          height: fit-content;
+          .profilePhoto-container{
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              .profilePhoto-container-title{
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  border-bottom: 1px solid lightgray;
+                  padding: 1.5rem;
+                  h2{
+                      font-size: 2rem;
+                      color: $color1;
+                  }
+              }
+              .profilePhoto-card{
+                  width: 100%;
+                  height: fit-content;
+                  padding: 1.5rem;
+                  display: flex;
+                  flex-direction: column;
+  
+                  h3{
+                      font-size: 1.5rem;
+                      padding: 1rem 0rem;
+                  }
+  
+                  input{
+                      padding: 0rem .5rem;
+                      width: 75%;
+                      font-size: 1rem;
+                  }
+  
+                  a{
+                      width: fit-content;
+                      padding: 0.5rem 0rem;
+                      color: $lightColor;
+                      font-size: 1.5rem;
+                      i{
+                          padding-right: .2rem;
+                      }
+                  }
+  
+                  p{
+                      font-size: 1rem;
+                      color: $darktext;
+                      padding: 0.5rem 0rem;
+                  }
+                  .stepButtons{
+                      display: flex;
+                      flex-direction: row;
+                      width: 100%;
+                      align-items: center;
+                      justify-content: flex-start;
+  
+                      #backToExpertise{
+                          width: 20%;
+                          text-align: center;
+                          margin: 1rem 0rem;
+                          cursor: pointer;
+                          font-size: 1rem;
+                          padding:0.5rem 0rem;
+                          color: $color1;
+                          border-radius: 15px;
+                          background: transparent;
+                          border: .7px solid $color1;
+                          &:hover{
+                            background: whitesmoke;
+                          }
+                      }
+                      #nextStepEmployment{
+                          width: 20%;
+                          text-align: center;
+                          margin: 1rem 1rem;
+                          cursor: pointer;
+                          font-size: 1rem;
+                          padding:0.5rem 0rem;
+                          color: white;
+                          border-radius: 15px;
+                          background: $lightColor;
+                          &:hover{
+                            background: $color1;
+                          }
+                      }
+                  }
+                  
+              }
+          }
       }
-      .location{
+      .locationCard{
           display: none;
+          width: 100%;
+          height: fit-content;
+          .location-container{
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              .location-container-title{
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  border-bottom: 1px solid lightgray;
+                  padding: 1.5rem;
+                  h2{
+                      font-size: 2rem;
+                      color: $color1;
+                  }
+              }
+              .location-card{
+                  width: 100%;
+                  height: fit-content;
+                  padding: 1.5rem;
+                  display: flex;
+                  flex-direction: column;
+  
+                  h3{
+                      font-size: 1.5rem;
+                      padding: 1rem 0rem;
+                  }
+  
+                  input{
+                      padding: 0rem .5rem;
+                      width: 75%;
+                      font-size: 1rem;
+                  }
+  
+                  a{
+                      width: fit-content;
+                      padding: 0.5rem 0rem;
+                      color: $lightColor;
+                      font-size: 1.5rem;
+                      i{
+                          padding-right: .2rem;
+                      }
+                  }
+  
+                  p{
+                      font-size: 1rem;
+                      color: $darktext;
+                      padding: 0.5rem 0rem;
+                  }
+                  .stepButtons{
+                      display: flex;
+                      flex-direction: row;
+                      width: 100%;
+                      align-items: center;
+                      justify-content: flex-start;
+  
+                      #backToExpertise{
+                          width: 20%;
+                          text-align: center;
+                          margin: 1rem 0rem;
+                          cursor: pointer;
+                          font-size: 1rem;
+                          padding:0.5rem 0rem;
+                          color: $color1;
+                          border-radius: 15px;
+                          background: transparent;
+                          border: .7px solid $color1;
+                          &:hover{
+                            background: whitesmoke;
+                          }
+                      }
+                      #nextStepEmployment{
+                          width: 20%;
+                          text-align: center;
+                          margin: 1rem 1rem;
+                          cursor: pointer;
+                          font-size: 1rem;
+                          padding:0.5rem 0rem;
+                          color: white;
+                          border-radius: 15px;
+                          background: $lightColor;
+                          &:hover{
+                            background: $color1;
+                          }
+                      }
+                  }
+                  
+              }
+          }
       }
     }
   }

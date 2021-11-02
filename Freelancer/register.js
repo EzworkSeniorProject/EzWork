@@ -1,5 +1,4 @@
-//Containers
-
+//Conatiners
 const start = document.querySelector(".start");
 const expertise = document.querySelector(".expertise");
 const education = document.querySelector(".education");
@@ -7,7 +6,7 @@ const employment = document.querySelector(".employment");
 const hourlyRate = document.querySelector(".hourlyRate");
 const titleDescription = document.querySelector(".titleDescription");
 const profilePhoto = document.querySelector(".profilePhoto");
-const location = document.querySelector(".location");
+const locationCard = document.querySelector(".locationCard");
 
 //Side Nav
 const expertiseNav = document.getElementById("expertiseNav");
@@ -19,7 +18,7 @@ const titleNav = document.getElementById("titleNav");
 const profilePicNav = document.getElementById("profilePicNav");
 const locationNav = document.getElementById("locationNav");
 
-// LINKEDIN CARD
+//Buttons
 const skipBtn = document.getElementById("skipStep");
 
 skipBtn.addEventListener("click", () => {
@@ -71,3 +70,52 @@ nextStepEmploymentBtn.addEventListener("click", () => {
   educationNav.style.background = "whitesmoke";
   employmentNav.style.background = "lightgray";
 });
+
+// Employment Card
+const backToEducationBtn = document.getElementById("backToEducation");
+backToEducationBtn.addEventListener("click", () => {
+  employment.style.display = "none";
+  education.style.display = "inline-block";
+  educationNav.style.background = "lightgray";
+  employmentNav.style.background = "whitesmoke";
+});
+
+const nextStepPayRateBtn = document.getElementById("nextStepPayRate");
+nextStepPayRateBtn.addEventListener("click", () => {
+  employment.style.display = "none";
+  hourlyRate.style.display = "inline-block";
+  payRateNav.style.background = "lightgray";
+  employmentNav.style.background = "whitesmoke";
+});
+
+//HOURLY RATE
+
+const nextStepTitleBtn = document.getElementById("nextStepTitle");
+nextStepTitleBtn.addEventListener("click", () => {
+  hourlyRate.style.display = "none";
+  payRateNav.style.background = "whitesmoke";
+  titleDescription.style.display = "inline-block";
+  titleNav.style.background = "lightgray";
+});
+
+// TITLE AND DESCRIPTION
+
+const nextStepProfilePhotoBtn = document.getElementById("nextStepProfilePhoto");
+nextStepProfilePhotoBtn.addEventListener("click", () => {
+  titleDescription.style.display = "none";
+  titleNav.style.background = "whitesmoke";
+  profilePhoto.style.display = "inline-block";
+  profilePicNav.style.background = "lightgray";
+});
+
+// PROFILE PHOTO
+
+const nextStepLocationBtn = document.getElementById("nextStepLocation");
+nextStepLocationBtn.addEventListener("click", () => {
+  profilePhoto.style.display = "none";
+  profilePicNav.style.background = "whitesmoke";
+  locationCard.style.display = "inline-block";
+  locationNav.style.background = "lightgray";
+});
+
+// LOCATION
