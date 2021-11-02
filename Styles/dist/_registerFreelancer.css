@@ -439,7 +439,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #backToExpertise {
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #backToEmployment {
   width: 20%;
   text-align: center;
   margin: 1rem 0rem;
@@ -451,10 +451,10 @@
   background: transparent;
   border: 0.7px solid #0a345e;
 }
-.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #backToExpertise:hover {
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #backToEmployment:hover {
   background: whitesmoke;
 }
-.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #nextStepEmployment {
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #nextStepTitle {
   width: 20%;
   text-align: center;
   margin: 1rem 1rem;
@@ -465,7 +465,7 @@
   border-radius: 15px;
   background: #054e97;
 }
-.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #nextStepEmployment:hover {
+.registerFreelancer #registerForm .hourlyRate .hourlyRate-container .hourlyRate-card .stepButtons #nextStepTitle:hover {
   background: #0a345e;
 }
 .registerFreelancer #registerForm .titleDescription {
@@ -526,7 +526,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #backToExpertise {
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #backToHourlyRate {
   width: 20%;
   text-align: center;
   margin: 1rem 0rem;
@@ -538,10 +538,10 @@
   background: transparent;
   border: 0.7px solid #0a345e;
 }
-.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #backToExpertise:hover {
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #backToHourlyRate:hover {
   background: whitesmoke;
 }
-.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #nextStepEmployment {
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #nextStepProfilePhoto {
   width: 20%;
   text-align: center;
   margin: 1rem 1rem;
@@ -552,7 +552,7 @@
   border-radius: 15px;
   background: #054e97;
 }
-.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #nextStepEmployment:hover {
+.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card .stepButtons #nextStepProfilePhoto:hover {
   background: #0a345e;
 }
 .registerFreelancer #registerForm .profilePhoto {
@@ -613,7 +613,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #backToExpertise {
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #backToTitleDescription {
   width: 20%;
   text-align: center;
   margin: 1rem 0rem;
@@ -625,10 +625,10 @@
   background: transparent;
   border: 0.7px solid #0a345e;
 }
-.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #backToExpertise:hover {
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #backToTitleDescription:hover {
   background: whitesmoke;
 }
-.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #nextStepEmployment {
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #nextStepLocation {
   width: 20%;
   text-align: center;
   margin: 1rem 1rem;
@@ -639,7 +639,7 @@
   border-radius: 15px;
   background: #054e97;
 }
-.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #nextStepEmployment:hover {
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons #nextStepLocation:hover {
   background: #0a345e;
 }
 .registerFreelancer #registerForm .locationCard {
@@ -700,7 +700,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #backToExpertise {
+.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #backToProfilePhoto {
   width: 20%;
   text-align: center;
   margin: 1rem 0rem;
@@ -712,10 +712,10 @@
   background: transparent;
   border: 0.7px solid #0a345e;
 }
-.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #backToExpertise:hover {
+.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #backToProfilePhoto:hover {
   background: whitesmoke;
 }
-.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #nextStepEmployment {
+.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons input {
   width: 20%;
   text-align: center;
   margin: 1rem 1rem;
@@ -726,6 +726,6 @@
   border-radius: 15px;
   background: #054e97;
 }
-.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons #nextStepEmployment:hover {
+.registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons input:hover {
   background: #0a345e;
 }
