@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="message-container">
+        <div class="chats">
+            <div class="chat-title">
+                <h4>Current Chats</h4>
+            </div>
+            <div class="users">
+                <ul>
+                    <li>Leo</li>
+                    <li>Stephanie</li>
+                    <li>Jose</li>
+                </ul>
+            </div>
+        </div>
+        <div class="liveChat">
+            <div class="liveChat-header">
+                <h3>Welcome to the Chat</h3>
+                <p>Click a user on the left to start chatting</p>
+            </div>
+            <div class="liveChat-container">
+                
+                <form class="form" action="messages.php?mid=<?php echo $id; ?>" method="post" name="message">
+                    <div class="chat-message clearfix">
+                        <textarea name="msg" id="message-to-send" placeholder="Type your message" rows="3" required></textarea>
+                        <input type="submit" value="Send" name="submit" class="button"></input>
+
+                    </div> <!-- end chat-message -->
+                </form>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

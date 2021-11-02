@@ -196,127 +196,202 @@
     </div>
 
 
-    <div class="settings">
-        <div class="settings-nav">
+    <div class="registerFreelancer">
+        <div class="registerFreelancer-nav">
             <ul>
-                <li style="background: lightgrey;" id="myInfo"><div class="tab"></div><a href="#/"><i class="fa fa-user"></i> My Info</a></li>
-                <li  id="passwordSecurity"><a href="#/"><i class="fa fa-lock"></i> Password & Security</a></li>
-                <li  id="billingMethods"><a href="#/"><i class="fa fa-credit-card-alt"></i> Billing Methods</a></li>
-                <li  id="notification"><a href="#/"><i class="fa fa-envelope"></i> Notification Settings</a></li>
-                <li  id="connectedServices"><a href="#/"><i class="fa fa-link"></i> Connected Services</a></li>
+                <li  id="linkeninNav"><div class="tab"></div><a href="#/"><i class="fab fa-linkedin"></i>Getting Started</a></li>
+                <li  id="expertiseNav"><a href="#/"><i class="fas fa-user-clock"></i>Expertise</a></li>
+                <li  id="educationNav"><a href="#/"><i class="fas fa-graduation-cap"></i>Education</a></li>
+                <li  id="employmentNav"><a href="#/"><i class="fas fa-briefcase"></i>Employment</a></li>
+                <li  id="payRateNav"><a href="#/"><i class="fas fa-dollar-sign"></i>Hourly Rate</a></li>
+                <li  id="titleNav"><a href="#/"><i class="fa fa-user-tie"></i>Title & Description</a></li>
+                <li  id="profilePicNav"><a href="#/"><i class="fas fa-camera-retro"></i>Profile Photo</a></li>
+                <li  id="locationNav"><a href="#/"><i class="fas fa-map-marker-alt"></i>Location</a></li>
             </ul>
         </div>
-        <div class="settings-container">
-            <div class="settings-container-title">
-                <h2 id="settings-title">My Info</h2>
-            </div>
-            <div class="settings-account-container">
-                <div class="settings-account-card">
-                    <h3>Account</h3>
-                    <i class="fa fa-pencil" onclick="openCard()" id="editAccountIcon" aria-hidden="true"></i>
-                </div>
-                <div class="settings-account-profile-image">
-                    <img src="../Users/user.svg" alt="">
-                </div>
-                <div class="settings-account-profile-info">
-                    <p>Name: <span id="settingsName"></span></p>
-                    <p>Account Type: <span>Client</span></p>
-                    <p>Phone Number: <span id="settingsPhone">516-960-8086</span></p>
-                    <p>Email: <span id="settingsEmail"></span></p>
-                </div>
-            </div>
-            <div class="settings-account-godMode">
-                <p>This is a <span id="accountType">Client</span> account.</p>
-                <button id="becomeFreelancer"  onclick="location.href='../Freelancer/register.html'">Become Freelancer</button>
-                <button id="deleteAccount" onclick="openCard()">Delete Account</button>
-            </div>
-        </div>
 
-        <!--Password section-->
-        <div class="settings-password">
-            <div class="settings-container-title">
-                <h2 id="settings-title">Password & Security</h2>
-            </div>
-            <div class="settings-password-container">
-                <div class="settings-password-card">
-                    <h3>Password</h3>
-                    <i class="fa fa-pencil" onclick="openCard()" id="changePasswordIcon" aria-hidden="true"></i>
-                </div>
-                <div class="settings-password-card2">
-                    <p>Use this section to view and edit your current password.</p>
-                </div>
-            </div>
-            <div class="settings-password-twoStep">
-                <div class="settings-password-twoStep-card">
-                    <h3>Two-step verification options</h3>
-                    <p>Add an extra layer of security to prevent unauthorized access.</p>
-                </div>
-                <div class="settings-password-twoStep-option">
-                    <div class="option-card">
-                        <h3>Text Message</h3>
-                        <p>Recieve a six digit code by text message to confirm it's you.</p>
+        <!--Form Start-->
+        <form id="registerForm">
+            <div class="start">
+                <div class="start-container">
+                    <div class="start-container-title">
+                        <h2 id="start-title">Getting Started</h2>
                     </div>
-                    <button onclick="guidGenerator()">Enable</button>
-                </div>
-                <div class="settings-password-twoStep-option">
-                    <div class="option-card">
-                        <h3>Email</h3>
-                        <p>Recive a six digit code by email to confirm it's you.</p>
+                    <div class="start-card">
+                        <h3>Upload your LinkedIn Profile</h3>
+                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
+                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+
+                        <div class="stepButtons">
+                            <span id="skipStep">Skip Step</span>
+                            <span id="nextStep">Next Step</span>
+                        </div>
+        
                     </div>
-                    <button onclick="guidGenerator()">Enable</button>
                 </div>
-                <div class="settings-password-twoStep-option" style="border: none;">
-                    <div class="option-card">
-                        <h3>Security Question</h3>
-                        <p>Answer a question you choose to confirm it's you.</p>
+            </div>
+            
+            <!--Expertise Start-->
+            <div class="expertise">
+                <div class="expertise-container">
+                    <div class="expertise-container-title">
+                        <h2 id="expertise-title">Expertise</h2>
                     </div>
-                    <button onclick="guidGenerator()">Enable</button>
+                    <div class="expertise-card">
+                        <h3>Upload your LinkedIn Profile</h3>
+                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
+                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+
+                        <div class="stepButtons">
+                            <span id="backToLinkedIn">Back</span>
+                            <span id="nextStepEducation">Next Step</span>
+                        </div>
+        
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="settings-billing">
-            <div class="settings-container-title">
-                <h2 id="settings-title">Billing Methods & Payments</h2>
-            </div>
-            <div class="settings-balance-container">
-                <div class="settings-balance-card">
-                    <h3>Balance Due</h3>
-                </div>
-                <div class="settings-balance-card2">
-                    <p>Your balance due is <span>$</span><span id="balance">0.00</span></p>
-                    <button id="payBalance">Pay Now</button>
-                </div>
-            </div>
-            <div class="settings-billing-container">
-                <div class="settings-billing-card">
-                    <h3>Billing Methods</h3>
-                    <button>Add a New Billing Method</button>
-                </div>
-                <div class="settings-billing-option">
-                    <p>You have not set up any billing methods yet.</p>
-                    <span>Set up your billing methods so you'll be able to hire right away when you're ready.</span>
+            <!--Expertise End-->
+
+            <!--Education Start-->
+            <div class="education">
+                <div class="education-container">
+                    <div class="education-container-title">
+                        <h2 id="education-title">Education</h2>
+                    </div>
+                    <div class="education-card">
+                        <h3>Upload your LinkedIn Profile</h3>
+                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
+                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+
+                        <div class="stepButtons">
+                            <span id="backToExpertise">Back</span>
+                            <span id="nextStepEmployment">Next Step</span>
+                        </div>
+        
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="notification">
-            <div class="settings-container-title">
-                <h2 id="settings-title">Notification Settings</h2>
+            <!--Education End-->
+
+            
+            <!--Employment Start-->
+            <div class="employment">
+                <div class="employment-container">
+                    <div class="employment-container-title">
+                        <h2 id="employment-title">Employment History</h2>
+                    </div>
+                    <div class="employment-card">
+                        <h3>Upload your LinkedIn Profile</h3>
+                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
+                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+
+                        <div class="stepButtons">
+                            <span id="backToEducation">Back</span>
+                            <span id="nextStepPayRate">Next Step</span>
+                        </div>
+        
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="connectedServices">
-            <div class="settings-container-title">
-                <h2 id="settings-title">Connected Services</h2>
+            <!--Employment End-->
+
+            <!--Hourly Rate Start-->
+            <div class="hourlyRate">
+                <div class="hourlyRate-container">
+                    <div class="hourlyRate-container-title">
+                        <h2 id="hourlyRate-title">Hourly Pay Rate</h2>
+                    </div>
+                    <div class="expertise-card">
+                        <h3>Upload your LinkedIn Profile</h3>
+                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
+                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+
+                        <div class="stepButtons">
+                            <span id="backToLinkedIn">Back</span>
+                            <span id="nextStep">Next Step</span>
+                        </div>
+        
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="myOverlay" class="overlay">
-            <span class="closebtn" onclick="closeCard()" title="Close Overlay">×</span>
-            <form id="editForm" >
-                <label for="password">Confirm Password</label>
-                <input type="password" name="password" id="password" required placeholder="Confirm your password">
-                <input type="button" id="continueBtn" value="Continue">
-            </form>
-        </div>
+            <!--Hourly Rate End-->
+
+            <!--Title&Description Start-->
+            <div class="titleDescription">
+                <div class="titleDescription-container">
+                    <div class="titleDescription-container-title">
+                        <h2 id="titleDescription-title">Title And Description</h2>
+                    </div>
+                    <div class="titleDescription-card">
+                        <h3>Upload your LinkedIn Profile</h3>
+                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
+                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+
+                        <div class="stepButtons">
+                            <span id="backToLinkedIn">Back</span>
+                            <span id="nextStep">Next Step</span>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            <!--Title&Description End-->
+
+            <!--Profile Photo Start-->
+            <div class="profilePhoto">
+                <div class="profilePhoto-container">
+                    <div class="profilePhoto-container-title">
+                        <h2 id="profilePhoto-title">Profile Picture</h2>
+                    </div>
+                    <div class="profilePhoto-card">
+                        <h3>Upload your LinkedIn Profile</h3>
+                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
+                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+
+                        <div class="stepButtons">
+                            <span id="backToLinkedIn">Back</span>
+                            <span id="nextStep">Next Step</span>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            <!--Profile Photo End-->
+
+            <!--Location Start-->
+            <div class="location">
+                <div class="location-container">
+                    <div class="location-container-title">
+                        <h2 id="location-title">Location</h2>
+                    </div>
+                    <div class="location-card">
+                        <h3>Upload your LinkedIn Profile</h3>
+                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
+                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+
+                        <div class="stepButtons">
+                            <span id="backToLinkedIn">Back</span>
+                            <span id="nextStep">Next Step</span>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            <!--Location End-->
+
+            <!-- End-->
+        </form>
+            
     </div>
+
     <div class="profileFooter">
         <div class="profile-links">
             <div class="links">
@@ -368,7 +443,6 @@
                    <datalist id="allskills">
                 </datalist>
 </body>
-<script src="./settings.js"></script>
 <script src="../SkillsContainer/searchProfile.js"></script>
 <script>
     var job = document.querySelector('.jobCard');
@@ -470,12 +544,7 @@
       document.getElementById("myOverlay").style.display = "none";
     }
 </script>
-<script>
-    function guidGenerator() {
-    var S4 = function() {
-       return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
-    };
-    console.log((S4()+S4()+"-"+S4()+S4()));
-}
-</script>
+
+<script src="./register.js"></script>
+
 </html>
