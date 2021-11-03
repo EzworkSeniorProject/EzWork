@@ -89,7 +89,6 @@ nextStepPayRateBtn.addEventListener("click", () => {
 });
 
 //HOURLY RATE
-
 const nextStepTitleBtn = document.getElementById("nextStepTitle");
 nextStepTitleBtn.addEventListener("click", () => {
   hourlyRate.style.display = "none";
@@ -98,8 +97,15 @@ nextStepTitleBtn.addEventListener("click", () => {
   titleNav.style.background = "lightgray";
 });
 
-// TITLE AND DESCRIPTION
+const backToEmploymentBtn = document.getElementById("backToEmployment");
+backToEmploymentBtn.addEventListener("click", () => {
+  employment.style.display = "inline-block";
+  hourlyRate.style.display = "none";
+  payRateNav.style.background = "whitesmoke";
+  employmentNav.style.background = "lightgray";
+});
 
+// TITLE AND DESCRIPTION
 const nextStepProfilePhotoBtn = document.getElementById("nextStepProfilePhoto");
 nextStepProfilePhotoBtn.addEventListener("click", () => {
   titleDescription.style.display = "none";
@@ -108,7 +114,24 @@ nextStepProfilePhotoBtn.addEventListener("click", () => {
   profilePicNav.style.background = "lightgray";
 });
 
+const backToHourlyRateBtn = document.getElementById("backToHourlyRate");
+backToHourlyRateBtn.addEventListener("click", () => {
+  hourlyRate.style.display = "inline-block";
+  payRateNav.style.background = "lightgray";
+  titleDescription.style.display = "none";
+  titleNav.style.background = "whitesmoke";
+});
+
 // PROFILE PHOTO
+const backToTitleDescriptionBtn = document.getElementById(
+  "backToTitleDescription"
+);
+backToTitleDescriptionBtn.addEventListener("click", () => {
+  titleDescription.style.display = "inline-block";
+  titleNav.style.background = "lightgray";
+  profilePhoto.style.display = "none";
+  profilePicNav.style.background = "whitesmoke";
+});
 
 const nextStepLocationBtn = document.getElementById("nextStepLocation");
 nextStepLocationBtn.addEventListener("click", () => {
@@ -119,3 +142,11 @@ nextStepLocationBtn.addEventListener("click", () => {
 });
 
 // LOCATION
+
+const backToProfilePhotoBtn = document.getElementById("backToProfilePhoto");
+backToProfilePhotoBtn.addEventListener("click", () => {
+  profilePhoto.style.display = "inline-block";
+  profilePicNav.style.background = "lightgray";
+  locationCard.style.display = "none";
+  locationNav.style.background = "whitesmoke";
+});

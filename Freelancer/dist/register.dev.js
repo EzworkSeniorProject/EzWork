@@ -86,6 +86,13 @@ nextStepTitleBtn.addEventListener("click", function () {
   payRateNav.style.background = "whitesmoke";
   titleDescription.style.display = "inline-block";
   titleNav.style.background = "lightgray";
+});
+var backToEmploymentBtn = document.getElementById("backToEmployment");
+backToEmploymentBtn.addEventListener("click", function () {
+  employment.style.display = "inline-block";
+  hourlyRate.style.display = "none";
+  payRateNav.style.background = "whitesmoke";
+  employmentNav.style.background = "lightgray";
 }); // TITLE AND DESCRIPTION
 
 var nextStepProfilePhotoBtn = document.getElementById("nextStepProfilePhoto");
@@ -94,8 +101,22 @@ nextStepProfilePhotoBtn.addEventListener("click", function () {
   titleNav.style.background = "whitesmoke";
   profilePhoto.style.display = "inline-block";
   profilePicNav.style.background = "lightgray";
+});
+var backToHourlyRateBtn = document.getElementById("backToHourlyRate");
+backToHourlyRateBtn.addEventListener("click", function () {
+  hourlyRate.style.display = "inline-block";
+  payRateNav.style.background = "lightgray";
+  titleDescription.style.display = "none";
+  titleNav.style.background = "whitesmoke";
 }); // PROFILE PHOTO
 
+var backToTitleDescriptionBtn = document.getElementById("backToTitleDescription");
+backToTitleDescriptionBtn.addEventListener("click", function () {
+  titleDescription.style.display = "inline-block";
+  titleNav.style.background = "lightgray";
+  profilePhoto.style.display = "none";
+  profilePicNav.style.background = "whitesmoke";
+});
 var nextStepLocationBtn = document.getElementById("nextStepLocation");
 nextStepLocationBtn.addEventListener("click", function () {
   profilePhoto.style.display = "none";
@@ -103,3 +124,11 @@ nextStepLocationBtn.addEventListener("click", function () {
   locationCard.style.display = "inline-block";
   locationNav.style.background = "lightgray";
 }); // LOCATION
+
+var backToProfilePhotoBtn = document.getElementById("backToProfilePhoto");
+backToProfilePhotoBtn.addEventListener("click", function () {
+  profilePhoto.style.display = "inline-block";
+  profilePicNav.style.background = "lightgray";
+  locationCard.style.display = "none";
+  locationNav.style.background = "whitesmoke";
+});
