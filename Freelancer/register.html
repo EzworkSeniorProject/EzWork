@@ -239,11 +239,21 @@
                         <h2 id="expertise-title">Expertise</h2>
                     </div>
                     <div class="expertise-card">
-                        <h3>Upload your LinkedIn Profile</h3>
-                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
-                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+                        <h3>What is your Expertise?</h3>
+                        <input type="text" name="" id="" placeholder="Software Engineer">
 
+                        <h3 style="margin-top: 1rem;">What is your Experience Level?</h3>
+                        <select name="experience">
+                            <option value="">----Select----</options>
+                            <option value="entry" value="">Entry </options>
+                            <option value="intermediate" value="">Intermediate </options>
+                            <option value="expert" value="">Expert</options>
+                        </select>  
+
+                        <div class="noExperience">
+                            <input type="checkbox" name="" id="">
+                            <p>No formal experience.</p>
+                        </div>                 
                         <div class="stepButtons">
                             <span id="backToLinkedIn">Back</span>
                             <span id="nextStepEducation">Next Step</span>
@@ -261,11 +271,31 @@
                         <h2 id="education-title">Education</h2>
                     </div>
                     <div class="education-card">
-                        <h3>Upload your LinkedIn Profile</h3>
-                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
-                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+                        <h3>School</h3>
+                        <input type="text" name="" id="" placeholder="School Name">
+                        <h3>Degree</h3>
+                        <select>
+                            <option value="">----Select----</options>
+                            <option value="GED">GED</option>
+                            <option value="Associate's Degree">Associate's Degree</option>
+                            <option value="Bachelor's degree">Bachelor's degree</option>
+                            <option value="Master's degree">Master's degree</option>
+                            <option value="Doctorate or higher">Doctorate or higher</option>
+                        </select>
+                        <h3>Field of Study</h3>
+                        <input type="text" name="" id="" placeholder="Aviation">
+                        <h3>Dates Attended</h3>
+                        <div class="dateCard">
 
+                            <input type="number" min="1900" max="2099" step="1" placeholder="2017" value="2017" />
+                            
+                            <input type="number" min="1900" max="2099" step="1" placeholder="2021" value="2021" />
+                        </div>
+
+                        <div class="noEducation">
+                            <input type="checkbox" name="" id="">
+                            <p>No formal education completed.</p>
+                        </div>
                         <div class="stepButtons">
                             <span id="backToExpertise">Back</span>
                             <span id="nextStepEmployment">Next Step</span>
@@ -284,11 +314,36 @@
                         <h2 id="employment-title">Employment History</h2>
                     </div>
                     <div class="employment-card">
-                        <h3>Upload your LinkedIn Profile</h3>
-                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
-                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+                        <h3>Job Title</h3>
+                        <input type="text" name="" id="jobTitle" placeholder="Senior Software Engineer">
+                        <h3>Company</h3>
+                        <input type="text" name="" id="" placeholder="Microsoft">
+                        <h3>Location</h3>
+                        <input type="text" name="" id="" placeholder="Redmong, Washington, U.S.">
 
+                        
+                        <div class="currentJob">
+                            <input type="checkbox" name="" id="">
+                            <p>I am currently still working this role.</p>
+                        </div>
+
+                        <div class="dateCard">
+                            <div class="from">
+                                <h3>Start Date</h3>
+                                <input type="date" name="" id="">
+                            </div>
+                            <div class="to">
+                                <h3>End Date</h3>
+                                <input type="date" name="" id="">
+                            </div>
+
+                        </div>
+
+                        <div class="noEmployment">
+                            <input type="checkbox" name="" id="">
+                            <p>No Employment history.</p>
+                        </div>
+                        
                         <div class="stepButtons">
                             <span id="backToEducation">Back</span>
                             <span id="nextStepPayRate">Next Step</span>

@@ -17311,28 +17311,49 @@ li {
 }
 
 .registerFreelancer #registerForm .expertise .expertise-container .expertise-card input {
-  padding: 0rem .5rem;
-  width: 75%;
+  padding: 0.25rem;
+  width: 50%;
   font-size: 1rem;
 }
 
-.registerFreelancer #registerForm .expertise .expertise-container .expertise-card a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.5rem 0rem;
-  color: #054e97;
-  font-size: 1.5rem;
-}
-
-.registerFreelancer #registerForm .expertise .expertise-container .expertise-card a i {
-  padding-right: .2rem;
-}
-
-.registerFreelancer #registerForm .expertise .expertise-container .expertise-card p {
+.registerFreelancer #registerForm .expertise .expertise-container .expertise-card select {
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  width: 40%;
   font-size: 1rem;
+  cursor: pointer;
+  background: none;
   color: #797979;
-  padding: 0.5rem 0rem;
+  border: .8px solid black;
+  border-radius: 5px;
+}
+
+.registerFreelancer #registerForm .expertise .expertise-container .expertise-card .noExperience {
+  margin: 1rem 0rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registerFreelancer #registerForm .expertise .expertise-container .expertise-card .noExperience input {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  justify-self: flex-start;
+  cursor: pointer;
+}
+
+.registerFreelancer #registerForm .expertise .expertise-container .expertise-card .noExperience p {
+  font-size: 1.1rem;
+  color: #797979;
 }
 
 .registerFreelancer #registerForm .expertise .expertise-container .expertise-card .stepButtons {
@@ -17443,28 +17464,70 @@ li {
 }
 
 .registerFreelancer #registerForm .education .education-container .education-card input {
-  padding: 0rem .5rem;
-  width: 75%;
+  padding: 0.25rem;
+  width: 50%;
   font-size: 1rem;
 }
 
-.registerFreelancer #registerForm .education .education-container .education-card a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.5rem 0rem;
-  color: #054e97;
-  font-size: 1.5rem;
-}
-
-.registerFreelancer #registerForm .education .education-container .education-card a i {
-  padding-right: .2rem;
-}
-
-.registerFreelancer #registerForm .education .education-container .education-card p {
+.registerFreelancer #registerForm .education .education-container .education-card select {
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  width: 40%;
   font-size: 1rem;
+  cursor: pointer;
+  background: none;
   color: #797979;
-  padding: 0.5rem 0rem;
+  border: .8px solid black;
+  border-radius: 5px;
+}
+
+.registerFreelancer #registerForm .education .education-container .education-card .dateCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.registerFreelancer #registerForm .education .education-container .education-card .dateCard input {
+  width: 25%;
+  margin-right: 1rem;
+}
+
+.registerFreelancer #registerForm .education .education-container .education-card .noEducation {
+  margin: 1.5rem 0rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registerFreelancer #registerForm .education .education-container .education-card .noEducation input {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  justify-self: flex-start;
+  cursor: pointer;
+}
+
+.registerFreelancer #registerForm .education .education-container .education-card .noEducation p {
+  font-size: 1.1rem;
+  color: #797979;
 }
 
 .registerFreelancer #registerForm .education .education-container .education-card .stepButtons {
@@ -17575,28 +17638,88 @@ li {
 }
 
 .registerFreelancer #registerForm .employment .employment-container .employment-card input {
-  padding: 0rem .5rem;
-  width: 75%;
+  padding: 0.25rem;
+  width: 45%;
   font-size: 1rem;
 }
 
-.registerFreelancer #registerForm .employment .employment-container .employment-card a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.5rem 0rem;
-  color: #054e97;
-  font-size: 1.5rem;
+.registerFreelancer #registerForm .employment .employment-container .employment-card .currentJob {
+  margin: 1.5rem 0rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.registerFreelancer #registerForm .employment .employment-container .employment-card a i {
-  padding-right: .2rem;
+.registerFreelancer #registerForm .employment .employment-container .employment-card .currentJob input {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  justify-self: flex-start;
+  cursor: pointer;
 }
 
-.registerFreelancer #registerForm .employment .employment-container .employment-card p {
-  font-size: 1rem;
+.registerFreelancer #registerForm .employment .employment-container .employment-card .currentJob p {
+  font-size: 1.1rem;
   color: #797979;
-  padding: 0.5rem 0rem;
+}
+
+.registerFreelancer #registerForm .employment .employment-container .employment-card .dateCard {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registerFreelancer #registerForm .employment .employment-container .employment-card .dateCard .from, .registerFreelancer #registerForm .employment .employment-container .employment-card .dateCard .to {
+  width: 50%;
+}
+
+.registerFreelancer #registerForm .employment .employment-container .employment-card .dateCard .from input, .registerFreelancer #registerForm .employment .employment-container .employment-card .dateCard .to input {
+  cursor: pointer;
+  width: 50%;
+}
+
+.registerFreelancer #registerForm .employment .employment-container .employment-card .noEmployment {
+  margin: 1.5rem 0rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registerFreelancer #registerForm .employment .employment-container .employment-card .noEmployment input {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  justify-self: flex-start;
+  cursor: pointer;
+}
+
+.registerFreelancer #registerForm .employment .employment-container .employment-card .noEmployment p {
+  font-size: 1.1rem;
+  color: #797979;
 }
 
 .registerFreelancer #registerForm .employment .employment-container .employment-card .stepButtons {
@@ -18162,13 +18285,16 @@ li {
 }
 
 .registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons input {
-  width: 20%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: center;
   margin: 1rem 1rem;
   cursor: pointer;
   font-size: 1rem;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem;
   color: white;
+  border: none;
   border-radius: 15px;
   background: #054e97;
 }
