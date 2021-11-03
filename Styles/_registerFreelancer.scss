@@ -516,33 +516,54 @@ $darktext: rgb(121, 121, 121);
                   padding: 1.5rem;
                   display: flex;
                   flex-direction: column;
-  
                   h3{
-                      font-size: 1.5rem;
-                      padding: 1rem 0rem;
+                        font-size: 1.5rem;
+                        padding: 1rem 0rem;
+                    }   
+
+                    p{
+                        font-size: 1rem;
+                        color: $darktext;
+                        padding: 0.25rem 0rem;
+                    }
+                  .setPay{
+                    width: 100%;
+                    
+                    h3{
+                        font-size: 1.5rem;
+                        padding: 1rem 0rem;
+                    }
+
+                    p{
+                        font-size: 1rem;
+                        color: $darktext;
+                    }
+                    input{
+                        width: 20%;
+                        font-size: 1rem;
+                    }
                   }
-  
-                  input{
-                      padding: 0rem .5rem;
-                      width: 75%;
-                      font-size: 1rem;
-                  }
-  
-                  a{
-                      width: fit-content;
-                      padding: 0.5rem 0rem;
-                      color: $lightColor;
-                      font-size: 1.5rem;
-                      i{
-                          padding-right: .2rem;
+
+                  .ourFee{
+                      width: 100%;
+                      padding-top: 1rem;
+                      h3{
+                          color: $lightColor;
+                          font-size: 1.5rem;
                       }
                   }
-  
-                  p{
-                      font-size: 1rem;
-                      color: $darktext;
-                      padding: 0.5rem 0rem;
+
+                  .totalPay{
+                      width: 100%;
+                      p{
+                          font-size: 1.2rem;
+                      }
+                      span{
+                          padding-left: .5rem;
+                          color: $lightColor;
+                      }
                   }
+
                   .stepButtons{
                       display: flex;
                       flex-direction: row;

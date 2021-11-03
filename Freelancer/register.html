@@ -361,10 +361,23 @@
                         <h2 id="hourlyRate-title">Hourly Pay Rate</h2>
                     </div>
                     <div class="hourlyRate-card">
-                        <h3>Upload your LinkedIn Profile</h3>
-                        <input type="url" name="" id="" placeholder="Enter your LinkenIn Account">
-                        <a href="https://www.linkedin.com/home"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                        <p>If you do not have a LinkedIn Account, you may skip this step.</p>
+                        <h3>Now, let’s set your hourly rate.</h3>
+                        <p>Clients will see this rate on your profile.</p>
+                        
+                        <div class="setPay">
+                            <h3>Hourly Rate</h3>
+                            <p>$ <input type="number" name="" id="payRate" min="0" placeholder="$0.00" style="padding-left: .5rem;"> / hr</p>
+                        </div>
+
+                        <div class="ourFee">
+                            <h3>EZWork Service Fee</h3>
+                            <p>The Upwork Service Fee is 10%.</p>
+                        </div>
+
+                        <div class="totalPay">
+                            <h3>You'll Recieve</h3>
+                            <p>$<span id="totalPay"></span> / hr</p>
+                        </div>
 
                         <div class="stepButtons">
                             <span id="backToEmployment">Back</span>

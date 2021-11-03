@@ -142,7 +142,6 @@ nextStepLocationBtn.addEventListener("click", () => {
 });
 
 // LOCATION
-
 const backToProfilePhotoBtn = document.getElementById("backToProfilePhoto");
 backToProfilePhotoBtn.addEventListener("click", () => {
   profilePhoto.style.display = "inline-block";
@@ -151,29 +150,19 @@ backToProfilePhotoBtn.addEventListener("click", () => {
   locationNav.style.background = "whitesmoke";
 });
 
-// Restricts input for the given textbox to the given inputFilter function.
-function setInputFilter(textbox, inputFilter) {
-  [
-    "input",
-    "keydown",
-    "keyup",
-    "mousedown",
-    "mouseup",
-    "select",
-    "contextmenu",
-    "drop",
-  ].forEach(function (event) {
-    textbox.addEventListener(event, function () {
-      if (inputFilter(this.value)) {
-        this.oldValue = this.value;
-        this.oldSelectionStart = this.selectionStart;
-        this.oldSelectionEnd = this.selectionEnd;
-      } else if (this.hasOwnProperty("oldValue")) {
-        this.value = this.oldValue;
-        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
-      } else {
-        this.value = "";
-      }
-    });
-  });
-}
+const payRateI = document.getElementById("payRate");
+
+const totalPaySpan = document.getElementById("totalPay");
+var serviceFee = 0.1;
+var userRate = payRateI.value;
+
+var total = userRate - serviceFee * userRate;
+totalPaySpan.innerText = total.toFixed(2);
+
+payRateI.addEventListener("input", () => {
+  var serviceFee = 0.1;
+  var userRate = payRateI.value;
+
+  var total = userRate - serviceFee * userRate;
+  totalPaySpan.innerText = total.toFixed(2);
+});
