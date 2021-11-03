@@ -595,20 +595,13 @@
   padding: 1rem 0rem;
 }
 .registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card input {
-  padding: 0rem 0.5rem;
-  width: 75%;
-  font-size: 1rem;
-}
-.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card a {
-  width: fit-content;
-  padding: 0.5rem 0rem;
-  color: #054e97;
-  font-size: 1.5rem;
-}
-.registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card a i {
-  padding-right: 0.2rem;
+  padding: 0.25rem;
+  width: 80%;
+  font-size: 0.8rem;
+  color: #797979;
 }
 .registerFreelancer #registerForm .titleDescription .titleDescription-container .titleDescription-card p {
+  width: 75%;
   font-size: 1rem;
   color: #797979;
   padding: 0.5rem 0rem;
@@ -682,23 +675,25 @@
   padding: 1rem 0rem;
 }
 .registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card input {
-  padding: 0rem 0.5rem;
+  padding: 0.5rem;
   width: 75%;
   font-size: 1rem;
-}
-.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card a {
-  width: fit-content;
-  padding: 0.5rem 0rem;
-  color: #054e97;
-  font-size: 1.5rem;
-}
-.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card a i {
-  padding-right: 0.2rem;
 }
 .registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card p {
   font-size: 1rem;
   color: #797979;
   padding: 0.5rem 0rem;
+}
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .tips h3 {
+  font-size: 1rem;
+  padding: 0rem;
+}
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .tips ul {
+  padding-left: 0.5rem;
+  list-style: initial;
+}
+.registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .tips ul li {
+  padding: 0.25rem 0rem;
 }
 .registerFreelancer #registerForm .profilePhoto .profilePhoto-container .profilePhoto-card .stepButtons {
   display: flex;
@@ -764,30 +759,58 @@
   display: flex;
   flex-direction: column;
 }
-.registerFreelancer #registerForm .locationCard .location-container .location-card h3 {
-  font-size: 1.5rem;
+.registerFreelancer #registerForm .locationCard .location-container .location-card .country {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0rem;
+}
+.registerFreelancer #registerForm .locationCard .location-container .location-card .country input {
+  padding: 0.25rem;
+  width: 40%;
+  font-size: 1rem;
+}
+.registerFreelancer #registerForm .locationCard .location-container .location-card .street-apartment {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 0rem;
+}
+.registerFreelancer #registerForm .locationCard .location-container .location-card .street-apartment input {
+  padding: 0.25rem;
+  width: 70%;
+  font-size: 1rem;
+}
+.registerFreelancer #registerForm .locationCard .location-container .location-card .street-apartment .apt {
+  margin-left: 1rem;
+  width: 20%;
+}
+.registerFreelancer #registerForm .locationCard .location-container .location-card .city-state-zip {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   padding: 1rem 0rem;
 }
-.registerFreelancer #registerForm .locationCard .location-container .location-card input {
-  padding: 0rem 0.5rem;
-  width: 75%;
+.registerFreelancer #registerForm .locationCard .location-container .location-card .city-state-zip input {
+  padding: 0.25rem;
+  width: 30%;
   font-size: 1rem;
 }
-.registerFreelancer #registerForm .locationCard .location-container .location-card a {
-  width: fit-content;
-  padding: 0.5rem 0rem;
-  color: #054e97;
-  font-size: 1.5rem;
+.registerFreelancer #registerForm .locationCard .location-container .location-card .city-state-zip .state {
+  margin-left: 1rem;
+  width: 30%;
 }
-.registerFreelancer #registerForm .locationCard .location-container .location-card a i {
-  padding-right: 0.2rem;
-}
-.registerFreelancer #registerForm .locationCard .location-container .location-card p {
-  font-size: 1rem;
-  color: #797979;
-  padding: 0.5rem 0rem;
+.registerFreelancer #registerForm .locationCard .location-container .location-card .city-state-zip .zip {
+  margin-left: 1rem;
+  width: 30%;
 }
 .registerFreelancer #registerForm .locationCard .location-container .location-card .stepButtons {
+  margin-top: 0.25rem;
   display: flex;
   flex-direction: row;
   width: 100%;

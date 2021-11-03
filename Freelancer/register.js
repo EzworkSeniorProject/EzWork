@@ -166,3 +166,19 @@ payRateI.addEventListener("input", () => {
   var total = userRate - serviceFee * userRate;
   totalPaySpan.innerText = total.toFixed(2);
 });
+
+const countryID = document.getElementById("countryID");
+
+const stateInput = document.querySelector(".state");
+
+var currentCountry = countryID.value;
+
+countryID.addEventListener("input", () => {
+  var currentCountry = countryID.value;
+
+  if (currentCountry != "United States of America") {
+    stateInput.style.display = "none";
+  } else {
+    stateInput.style.display = "inline-block";
+  }
+});
