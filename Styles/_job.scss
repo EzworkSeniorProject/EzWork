@@ -20,7 +20,7 @@ $darktext: rgb(121, 121, 121);
         border-radius: 15px;
         border: solid lightgrey .7px;
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2.25fr 1fr;
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -130,7 +130,7 @@ $darktext: rgb(121, 121, 121);
                     margin: .5rem 0rem;
 
                     h4{
-                        font-size: 1.1rem;
+                        font-size: 1.2rem;
                         color: $lightColor;
                         text-decoration: underline;
                     }
@@ -148,7 +148,7 @@ $darktext: rgb(121, 121, 121);
                 flex-direction: column;
                 align-items: flex-start;
                 h4{
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     color: $lightColor;
                     text-decoration: underline;
                 }
@@ -165,12 +165,121 @@ $darktext: rgb(121, 121, 121);
             padding: 2rem;
             grid-area: 1 / 2 / 2 / 3;
             border-bottom: solid lightgrey .7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            button{
+                width: 90%;
+                background: $lightColor;
+                color: white;
+                text-align: center;
+                border: none;
+                font-size: 1rem;
+                padding: .5rem 0rem;
+                border-radius: 12px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $color1;
+                }
+            }
+
+            .flag{
+                margin: 1rem 0rem;
+                i{
+                    font-size: 1.1rem;
+                    color: $lightColor;
+                }
+                span{
+                    font-size: 1.1rem;
+                    color: $lightColor;
+                    margin-left: .5rem;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
         .clientInfo { 
-            grid-area: 2 / 2 / 3 / 3; 
+            grid-area: 2 / 2 / 3 / 3;
+            width: 100%;
+            border-bottom: solid lightgrey .7px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            
+            h3{
+                font-size: 1.3rem;
+                color: $lightColor;
+                width: 100%;
+                text-decoration: underline;
+                padding-bottom: 1rem;
+            }
+
+            .username{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                p{
+                    font-size: 1.1rem;
+                    color: $color1;
+                    padding-right:.5rem ;
+                }
+                a{
+                    font-size: 1rem;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .img-card{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 1rem 0rem;
+                img{
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
         }
         .joblink { 
             grid-area: 3 / 2 / 4 / 3; 
+            padding: 1.5rem;
+            width: 100%;
+            h4{
+                font-size: 1.1rem;
+                color: $color1;
+                text-decoration: underline;
+                padding: 1rem 0rem;
+            }
+
+            .link{
+                width: 100%;
+                padding: .5rem;
+                border-radius: 5px;
+                border: solid lightgrey .7px;
+                background: whitesmoke;
+                pointer-events: none;
+            }
+
+            p{
+                cursor: pointer;
+                font-size: 1rem;
+                padding: .5rem 0rem;
+                color: $lightColor;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
         } 
     }
 }
