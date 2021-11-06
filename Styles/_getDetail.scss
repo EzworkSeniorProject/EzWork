@@ -1198,6 +1198,205 @@
     }
   }
 }
+// Css for posting location start here
+.postJob-detail-location {
+  margin-top: 4.5rem;
+  height: fit-content;
+  width: 100%;
+  background: whitesmoke;
+  padding: 2.5rem 10rem;
+
+  .detail-location-container {
+    width: 100%;
+    height: fit-content;
+    background: $color1;
+    display: flex;
+    flex-direction: row;
+    border: 1.25px solid rgb(153, 130, 130);
+    border-radius: 15px;
+    .detail-progress-section {
+      width: 50%;
+      height: fit-content;
+      padding: 1.5rem;
+      background: $color1;
+      display: flex;
+      flex-direction: column;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      #current {
+        color: lightgreen;
+      }
+      .progressBar {
+        width: 100%;
+        progress {
+          border-radius: 10px;
+          width: 100%;
+          padding: 0;
+          border: none;
+          background: #104880;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+        progress::-webkit-progress-bar {
+          border-radius: 10px;
+          width: 100%;
+          padding: 0;
+          border: none;
+          background: #104880;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+        progress::-moz-progress-bar {
+          border-radius: 10px;
+          width: 100%;
+          padding: 0;
+          border: none;
+          background: #104880;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+        progress::-webkit-progress-value {
+          background: lightgreen;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          height: 100%;
+          border: none;
+        }
+        progress::-moz-progress-bar {
+          background: lightgreen;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          height: 100%;
+          border: none;
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 0.3rem;
+          li {
+            color: white;
+            font-size: 0.9rem;
+          }
+        }
+      }
+      .title-card-intro {
+        h2 {
+          padding: 6rem 0rem 1rem 0rem;
+          color: white;
+          font-size: 2.3rem;
+        }
+        p {
+          color: white;
+          font-size: 0.95rem;
+        }
+      }
+    }
+    .detail-input-section {
+      width: 50%;
+      height: fit-content;
+      padding: 2rem;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+
+      form{
+        width: 100%;
+        height: fit-content;
+        .CancelOrNext {
+          margin-top: 4rem;
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content: flex-end;
+          align-items: center;
+
+          #nextBudget {
+            margin-left: 1rem;
+            color: $color1;
+            font-size: 1rem;
+            background: $lightColor;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            pointer-events: none;
+            &:hover {
+              background: $color1;
+            }
+          }
+        }
+        .locationOptions {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          .optionCard {
+            width: 100%;
+            height: 32vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+            border: 1.25px solid lightgrey;
+            border-radius: 9px;
+            .choosen {
+              padding: 0.5rem 0.5rem 0rem 0rem;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              width: 100%;
+              input {
+                font-size: 0.7rem;
+                color: white;
+                padding: 0.2rem;
+                border-radius: 50%;
+                background: white;
+                border: 0.7px solid lightgrey;
+              }
+            }
+  
+            .usOnly,
+            .worldwide {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 1rem;
+              label {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: lighter;
+                padding: 1rem 0rem;
+              }
+              p {
+                width: 100%;
+                text-align: center;
+                font-size: 0.9rem;
+                color: $darktext;
+              }
+            }
+            &:hover {
+              background: rgb(248, 246, 246);
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}
 // Css for posting budget start here
 .postJob-detail-budget {
   margin-top: 4.5rem;

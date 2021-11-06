@@ -1,0 +1,47 @@
+.job {
+  margin-top: 4.5rem;
+  width: 100%;
+  background: whitesmoke;
+  padding: 2.5rem 8rem;
+}
+.job h2 {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.job .job-container {
+  margin: 1rem;
+  background: white;
+  width: 100%;
+  border-radius: 15px;
+  border: solid lightgrey 0.7px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.job .job-container .jobCard {
+  width: 100%;
+  grid-area: 1/1/4/2;
+  border-right: solid lightgrey 0.7px;
+}
+.job .job-container .jobCard .jobTitle {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  border-bottom: solid lightgrey 0.7px;
+}
+.job .job-container .options {
+  width: 100%;
+  padding: 2rem;
+  grid-area: 1/2/2/3;
+  border-bottom: solid lightgrey 0.7px;
+}
+.job .job-container .clientInfo {
+  grid-area: 2/2/3/3;
+}
+.job .job-container .joblink {
+  grid-area: 3/2/4/3;
+}
