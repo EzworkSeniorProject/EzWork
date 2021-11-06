@@ -1,3 +1,6 @@
+$color1: #0a345e;
+$lightColor: #054e97;
+$darktext: rgb(121, 121, 121);
 .job{
     margin-top: 4.5rem;
     width: 100%;
@@ -36,6 +39,126 @@
                 font-weight: bold;
                 border-bottom: solid lightgrey .7px;
             }
+
+            .scope{
+                width: 100%;
+                padding: 1.5rem 2rem;
+                border-bottom: solid lightgrey .7px;  
+                display: flex;
+                flex-direction: column;  
+                justify-content: space-between;
+                
+                h3{
+                    font-size: 1.1rem;
+                    color: $lightColor;
+                    width: 100%;
+                    font-weight: bolder;
+                }
+
+                p{
+                    font-size: 1rem;
+                    color: $lightColor;
+                    padding: .5rem 0rem;
+
+                    span{
+                        color: black;
+                    }
+
+                    i{
+                        padding-right: .5rem;
+                    }
+                }
+            }
+            .jobDescription{
+                width: 100%;
+                padding: 2rem;
+                border-bottom: solid lightgrey .7px;
+                h3{
+                    font-size: 1.3rem;
+                    color: $lightColor;
+                    text-decoration: underline;
+                }
+                p{
+                    padding: .5rem 0rem;
+                    font-size: 1rem;
+                    width: 95%;
+                    line-height: 1.5rem;
+                }
+            }
+
+            .budgetAndExperience{
+                width: 100%;
+                padding: 1.5rem 2rem;
+                border-bottom: solid lightgrey .7px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .budget{
+                    width: 50%;
+                    p{
+                        font-size: 1.3rem;
+                    }
+                    span{
+                        font-size: 1rem;
+                        color: $darktext;
+                    }
+                }
+
+                .experience{
+                    width: 50%;
+                    h4{
+                        font-size: 1.1rem;
+                        color: $lightColor;
+                    }
+                }
+
+            }
+
+            .jobType{
+                width: 100%;
+                padding: 1.5rem 2rem;
+                border-bottom: solid lightgrey .7px;
+                display: flex;
+                flex-direction: column;
+                .type,.size{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: .5rem 0rem;
+
+                    h4{
+                        font-size: 1.1rem;
+                        color: $lightColor;
+                        text-decoration: underline;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                        padding-left: .5rem;
+                    }
+                }
+            }
+
+            .skills{
+                width: 100%;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                h4{
+                    font-size: 1.1rem;
+                    color: $lightColor;
+                    text-decoration: underline;
+                }
+                span{
+                    font-size: .9rem;
+                    color: $darktext;
+                }
+
+            }
+
         }
         .options { 
             width: 100%;
