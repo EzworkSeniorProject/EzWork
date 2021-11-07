@@ -263,10 +263,10 @@
             <div class="joblink">
                 <h4>Job Link</h4>
                 <div class="link">
-                    <span>www.google.com</span>        
+                    <span id="link">www.google.com/leo</span>        
                 </div>
             
-                <p>Copy Link</p>
+                <p id="copyLink">Copy Link</p>
             </div>
         </div>
     </div>
@@ -429,6 +429,26 @@ function toggleJobCard(){
         sortDownBtn.style.transform = "rotate(360deg)";
     }
 }
+</script>
+
+<script>
+
+
+    function copyToClipboard(link) {
+        const el = document.createElement("textarea");
+        el.value = link.innerText;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand("copy");
+        document.body.removeChild(el);
+    } // Ends copyToClipboard()
+
+    const copyLinkBtn = document.getElementById('copyLink');
+
+    copyLinkBtn.addEventListener('click',()=>{
+        var link = document.getElementById('link');
+        copyToClipboard(link);
+    })
 </script>
 
 </html>
