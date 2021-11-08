@@ -20673,25 +20673,76 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .jobs .jobs-header h4 {
-  width: 30%;
+  width: 20%;
   font-size: 2rem;
 }
 
 .jobs .jobs-header .searchBar {
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .jobs .jobs-header .searchBar #searchContainer {
+  padding: 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
 }
 
 .jobs .jobs-header .searchBar #searchContainer #search {
+  height: 100%;
   width: 80%;
+  border: none;
+  font-size: 1.1rem;
+  color: black;
+  padding: .5rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  outline: none;
+}
+
+.jobs .jobs-header .searchBar #searchContainer #find {
+  height: 100%;
+  width: 20%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: .5rem 0rem;
+  color: white;
+  background: #054e97;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.jobs .jobs-header .searchBar #searchContainer #find:hover {
+  background: #0a345e;
 }
 /*# sourceMappingURL=style.css.map */
