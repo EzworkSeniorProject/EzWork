@@ -20109,6 +20109,31 @@ li {
   color: #797979;
 }
 
+.job .job-container .jobCard .skills h3 {
+  font-size: 1.2rem;
+  color: #054e97;
+  text-decoration: underline;
+}
+
+.job .job-container .jobCard .skills h3 i {
+  margin-right: .5rem;
+  text-decoration: none;
+}
+
+.job .job-container .jobCard .skills .image {
+  width: 70%;
+  height: 15rem;
+  margin: 1rem 0rem;
+}
+
+.job .job-container .jobCard .skills .image img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .job .job-container .options {
   width: 100%;
   padding: 2rem;
@@ -20626,5 +20651,47 @@ li {
   .job .job-container .joblink p:hover {
     text-decoration: underline;
   }
+}
+
+.jobs {
+  margin-top: 4.5rem;
+  width: 100%;
+  background: whitesmoke;
+  padding: 2.5rem 8rem;
+}
+
+.jobs .jobs-header {
+  width: 100%;
+  padding: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jobs .jobs-header h4 {
+  width: 30%;
+  font-size: 2rem;
+}
+
+.jobs .jobs-header .searchBar {
+  width: 60%;
+}
+
+.jobs .jobs-header .searchBar #searchContainer {
+  width: 100%;
+}
+
+.jobs .jobs-header .searchBar #searchContainer #search {
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */

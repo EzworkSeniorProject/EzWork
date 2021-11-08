@@ -194,92 +194,15 @@
         </div>
     </div>
 
-    <div class="job">
-        <h2>Job Details</h2>
-        <div class="job-container">
-            
-            <div class="jobCard">
-                <div class="jobTitle">
-                    <p>I need someone to make me a website.</p>
-                </div>
-                <div class="scope">
-                    <h3>Front End Development</h3>
-                    <p>Posted On: <span>11/6/2021</span></p>
-                    <p><i class="fas fa-map-marker-alt"></i><span>Worldwide</span></p>
-                    <p>Status: <span>Open</span></p>
-                </div>
-                
-                <div class="jobDescription">
-                    <h3>Description</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure reprehenderit, quam sapiente eligendi ipsam harum odio nemo illo, earum vitae laudantium a facilis! Quae sit maxime dolore vel deleniti excepturi.</p>
-                </div>
 
-                <div class="budgetAndExperience">
-                    <div class="budget">
-                        <p>5</p>
-                        <span>Hourly Rate</span>
-                    </div>
-                    <div class="experience">
-                        <h4>Entry Level</h4>
-                    </div>
-                </div>
-
-                <div class="jobType">
-                    <div class="type">
-                        <h4>Project Type:</h4>
-                        <p>Designated, Longer Term.</p>
-                    </div>
-                    <div class="size">
-                        <h4>Project Size:</h4>
-                        <p>Medium</p>
-                    </div>
- 
-                </div>
-
-                <div class="skills">
-                    <h4>Skills & Expertise</h4>
-                    <span>Software Developer</span>
-                    <h3><i class="fa fa-paperclip" aria-hidden="true"></i>Attached Image</h3>
-                    <div class="image">
-                        <img src="../Users/john.jpg" alt="">
-                        <a href="../Users/john.jpg" download="output.png">Download</a>
-                        <script>
-                            var a = document.createElement('a');
-                            a.href = "/output.png";
-                            a.download = "output.png";
-                            document.body.appendChild(a);
-                            a.click();
-                            document.body.removeChild(a);
-                        </script>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="options">
-                <button>Submit A Proposal</button>
-
-                <div class="flag">
-                    <i class="fa fa-flag" aria-hidden="true"></i>
-                    <span>Flag as Inappropiate</span>
-                </div>
-            </div>
-            <div class="clientInfo">
-                <h3>About the Client</h3>
-                <div class="username">
-                    <p>Posted By: </p>
-                    <a href="#/">leobarrientos</a>
-                </div>
-                <div class="img-card">
-                    <img src="../Users/leo.JPG" alt="">
-                </div>
-            </div>
-            <div class="joblink">
-                <h4>Job Link</h4>
-                <div class="link">
-                    <span id="link">www.google.com/leo</span>        
-                </div>
-            
-                <p id="copyLink">Copy Link</p>
+    <div class="jobs">
+        <div class="jobs-header">
+            <h4>Find Work</h4>
+            <div class="searchBar">
+                <form id="searchContainer">
+                    <input type="text" list="allskills" autocomplete="off" name="search" placeholder="Search" id="search">
+                    <input type="submit" value="Find">
+                </form>
             </div>
         </div>
     </div>
@@ -444,24 +367,5 @@ function toggleJobCard(){
 }
 </script>
 
-<script>
-
-
-    function copyToClipboard(link) {
-        const el = document.createElement("textarea");
-        el.value = link.innerText;
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand("copy");
-        document.body.removeChild(el);
-    } // Ends copyToClipboard()
-
-    const copyLinkBtn = document.getElementById('copyLink');
-
-    copyLinkBtn.addEventListener('click',()=>{
-        var link = document.getElementById('link');
-        copyToClipboard(link);
-    })
-</script>
 
 </html>

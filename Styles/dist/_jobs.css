@@ -1,0 +1,27 @@
+.jobs {
+  margin-top: 4.5rem;
+  width: 100%;
+  background: whitesmoke;
+  padding: 2.5rem 8rem;
+}
+.jobs .jobs-header {
+  width: 100%;
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.jobs .jobs-header h4 {
+  width: 30%;
+  font-size: 2rem;
+}
+.jobs .jobs-header .searchBar {
+  width: 60%;
+}
+.jobs .jobs-header .searchBar #searchContainer {
+  width: 100%;
+}
+.jobs .jobs-header .searchBar #searchContainer #search {
+  width: 80%;
+}

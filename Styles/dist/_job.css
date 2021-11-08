@@ -139,6 +139,26 @@
   font-size: 0.9rem;
   color: #797979;
 }
+.job .job-container .jobCard .skills h3 {
+  font-size: 1.2rem;
+  color: #054e97;
+  text-decoration: underline;
+}
+.job .job-container .jobCard .skills h3 i {
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+.job .job-container .jobCard .skills .image {
+  width: 70%;
+  height: 15rem;
+  margin: 1rem 0rem;
+}
+.job .job-container .jobCard .skills .image img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .job .job-container .options {
   width: 100%;
   padding: 2rem;
