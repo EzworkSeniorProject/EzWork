@@ -20830,8 +20830,130 @@ li {
 
 .jobs .jobs-container .allJobs .allJobsContainer .jobPost {
   width: 100%;
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-top: .7px solid lightgrey;
+  cursor: pointer;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .job-title {
+  width: 100%;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .job-title a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: #054e97;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .job-title a:hover {
+  text-decoration: underline;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .status {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .status p {
+  color: #797979;
+  font-size: 1rem;
+  margin-right: .5rem;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .status span {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: lightgreen;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .card1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .card1 .postedOn, .jobs .jobs-container .allJobs .allJobsContainer .jobPost .card1 .postedBy {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .card1 .postedOn p, .jobs .jobs-container .allJobs .allJobsContainer .jobPost .card1 .postedBy p {
+  color: #797979;
+  font-size: 1rem;
+  margin-right: .5rem;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .card1 .postedOn span, .jobs .jobs-container .allJobs .allJobsContainer .jobPost .card1 .postedBy span {
+  font-size: .95rem;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .card2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .card2 .location, .jobs .jobs-container .allJobs .allJobsContainer .jobPost .card2 .price {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .card2 .location p, .jobs .jobs-container .allJobs .allJobsContainer .jobPost .card2 .price p {
+  color: #797979;
+  font-size: 1rem;
+  margin-right: .25rem;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost .card2 .location span, .jobs .jobs-container .allJobs .allJobsContainer .jobPost .card2 .price span {
+  font-size: .95rem;
+}
+
+.jobs .jobs-container .allJobs .allJobsContainer .jobPost:hover {
+  background: whitesmoke;
 }
 
 .jobs .jobs-container .allJobs .allJobsContainer .JobsFooter {
