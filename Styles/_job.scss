@@ -171,11 +171,14 @@ $darktext: rgb(121, 121, 121);
                     width: 70%;
                     height: 15rem;
                     margin: 1rem 0rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
                     img{
                         border-radius: 5px;
                         height: 100%;
                         width: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
                 }
 
