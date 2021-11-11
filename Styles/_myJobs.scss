@@ -1,55 +1,59 @@
 $color1: #0a345e;
 $lightColor: #054e97;
 $darktext: rgb(121, 121, 121);
-.myJobs{
+
+.myJobs {
     margin-top: 4.5rem;
     width: 100%;
     background: whitesmoke;
     padding: 2.5rem 10rem;
-   
-    .myJobs-header{
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-between;
-     
-     ul{
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         
-         li{
-             margin: 0rem .2rem;
-             font-size: .9rem;
-             color: $darktext;
-             a{
-                 text-decoration: none;
-                 color: $lightColor;
-                 &:hover{
-                     text-decoration: underline;
-                 }
-             }
-         }
-     }
 
-     button{
-        cursor: pointer;
-        border-radius: 15px;
-        border: none;
-        background: $lightColor;
-        font-size: 1rem;
-        color: white;
-        font-weight: bolder;
-        padding: 0.6rem 1.5rem;
-        margin-left: 0.25rem;
-        &:hover {
-          transition: all 0.5s ease;
-          background: $color1;
+    .myJobs-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            li {
+                margin: 0rem .2rem;
+                font-size: .9rem;
+                color: $darktext;
+
+                a {
+                    text-decoration: none;
+                    color: $lightColor;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
-     }
+
+        button {
+            cursor: pointer;
+            border-radius: 15px;
+            border: none;
+            background: $lightColor;
+            font-size: 1rem;
+            color: white;
+            font-weight: bolder;
+            padding: 0.6rem 1.5rem;
+            margin-left: 0.25rem;
+
+            &:hover {
+                transition: all 0.5s ease;
+                background: $color1;
+            }
+        }
     }
 
-    .myJobs-container{
+    .myJobs-container {
         margin-top: 2rem;
         width: 100%;
         display: flex;
@@ -58,7 +62,7 @@ $darktext: rgb(121, 121, 121);
         border: .8px solid lightgrey;
         background-color: white;
 
-        .myJobs-container-header{
+        .myJobs-container-header {
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -68,13 +72,14 @@ $darktext: rgb(121, 121, 121);
             border-bottom: .8px solid lightgrey;
 
 
-            .searchBar{
+            .searchBar {
                 width: 60%;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                #searchContainer{
+
+                #searchContainer {
                     padding: 0;
                     width: 100%;
                     display: flex;
@@ -82,7 +87,8 @@ $darktext: rgb(121, 121, 121);
                     align-items: center;
                     border: 1px solid lightgrey;
                     border-radius: 8px;
-                    #search{
+
+                    #search {
                         height: 100%;
                         width: 80%;
                         border: none;
@@ -93,7 +99,8 @@ $darktext: rgb(121, 121, 121);
                         border-bottom-left-radius: 8px;
                         outline: none;
                     }
-                    #find{
+
+                    #find {
                         height: 100%;
                         width: 20%;
                         border: none;
@@ -104,14 +111,15 @@ $darktext: rgb(121, 121, 121);
                         background: $lightColor;
                         border-top-right-radius: 8px;
                         border-bottom-right-radius: 8px;
-                        &:hover{
+
+                        &:hover {
                             background: $color1;
                         }
                     }
                 }
             }
 
-            button{
+            button {
                 cursor: pointer;
                 border-radius: 15px;
                 border: none;
@@ -122,22 +130,26 @@ $darktext: rgb(121, 121, 121);
                 padding: 0.6rem 1.5rem;
                 margin-right: 0.25rem;
                 border: 1px solid lightgrey;
-                i{
+
+                i {
                     margin-right: .3rem;
                 }
+
                 &:hover {
-                  transition: all 0.2s ease;
-                  background: rgb(219, 219, 219);
+                    transition: all 0.2s ease;
+                    background: rgb(219, 219, 219);
                 }
             }
         }
 
 
-        .spacer{
+        .spacer {
             width: 100%;
-            h3{
+
+            h3 {
                 opacity: 0;
             }
+
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }

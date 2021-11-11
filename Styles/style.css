@@ -20984,10 +20984,99 @@ li {
           justify-content: flex-start;
 }
 
-.jobs .jobs-container .sortMenu h3 {
-  width: 100%;
+.jobs .jobs-container .sortMenu .sort {
+  padding: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jobs .jobs-container .sortMenu .sort h3 {
   font-size: 1.5rem;
-  text-decoration: underline;
+}
+
+.jobs .jobs-container .sortMenu .sort i {
+  color: #0a345e;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.jobs .jobs-container .sortMenu .sortCard {
+  display: none;
+  width: 100%;
+}
+
+.jobs .jobs-container .sortMenu .sortCard .sortAtoZ, .jobs .jobs-container .sortMenu .sortCard .sortZtoA, .jobs .jobs-container .sortMenu .sortCard .sortPriceLowHigh, .jobs .jobs-container .sortMenu .sortCard .sortPriceHighLow {
+  width: 100%;
+  margin-bottom: .5rem;
+  padding: .5rem 0rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 1rem;
+}
+
+.jobs .jobs-container .sortMenu .sortCard .sortAtoZ p, .jobs .jobs-container .sortMenu .sortCard .sortZtoA p, .jobs .jobs-container .sortMenu .sortCard .sortPriceLowHigh p, .jobs .jobs-container .sortMenu .sortCard .sortPriceHighLow p {
+  font-size: .9rem;
+  margin-left: 1rem;
+  font-weight: bolder;
+}
+
+.jobs .jobs-container .sortMenu .sortCard .sortAtoZ i, .jobs .jobs-container .sortMenu .sortCard .sortZtoA i, .jobs .jobs-container .sortMenu .sortCard .sortPriceLowHigh i, .jobs .jobs-container .sortMenu .sortCard .sortPriceHighLow i {
+  margin-left: .3rem;
+}
+
+.jobs .jobs-container .sortMenu .sortCard .sortAtoZ:hover, .jobs .jobs-container .sortMenu .sortCard .sortZtoA:hover, .jobs .jobs-container .sortMenu .sortCard .sortPriceLowHigh:hover, .jobs .jobs-container .sortMenu .sortCard .sortPriceHighLow:hover {
+  background: white;
+}
+
+.jobs .jobs-container .sortMenu .filter {
+  border-top: .7px solid lightgrey;
+  padding: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jobs .jobs-container .sortMenu .filter h3 {
+  font-size: 1.5rem;
+}
+
+.jobs .jobs-container .sortMenu .filter i {
+  color: #0a345e;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .jobs .jobs-container .allJobs {

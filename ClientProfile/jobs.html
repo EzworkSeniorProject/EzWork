@@ -208,11 +208,34 @@
 
         <div class="jobs-container">
             <div class="sortMenu">
-                <div class="sort">
+                <div class="sort" onmousedown="toggleSortCard()">
                     <h3>Sort</h3>
+                    <i class="fa fa-sort-desc" id="sortArrow" aria-hidden="true"></i>
+                </div>
+                <div class="sortCard">
+                    <div class="sortAtoZ">
+                        <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+                        <p>A to Z</p>
+                    </div>
+                    <div class="sortZtoA">
+                        <i class="fa fa-sort-alpha-desc" aria-hidden="true"></i>
+                        <p>Z to A</p>
+                    </div>
+                    <div class="sortPriceLowHigh">
+                        <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                        <p>Price: Low to High</p>
+                    </div>
+                    <div class="sortPriceHighLow">
+                        <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+                        <p>Price: High to Low</p>
+                    </div>
                 </div>
                 <div class="filter">
                     <h3>Filter</h3>
+                    <i class="fa fa-sort-desc" id="filterArrow" aria-hidden="true"></i>
+                </div>
+                <div class="filterCard">
+
                 </div>
             </div>
 
@@ -333,7 +356,6 @@
         </datalist>
 </body>
 <script src="../SkillsContainer/searchProfile.js"></script>
-<script src="./app.js"></script>
 <script>
     var job = document.querySelector('.jobCard');
     var talent = document.querySelector('.talentCard');
@@ -437,6 +459,27 @@ function toggleJobCard(){
         sortDownBtn.style.transform = "rotate(360deg)";
     }
 }
+</script>
+
+<script>
+    const sortArrow = document.getElementById('sortArrow');
+    
+    function toggleSortCard(){
+    const sortCard = document.querySelector('.sortCard'); 
+    if (getComputedStyle(sortCard).display === "none") {
+        sortArrow.style.transform = "rotate(180deg)";
+        sortCard.style.display = "inline-block";
+    } else {
+        sortCard.style.display = "none";
+        sortArrow.style.transform = "rotate(360deg)";
+    }
+}
+
+
+    const filterArrow = document.getElementById('filterArrow');
+    filterArrow.addEventListener('click',()=>{
+        filterArrow.style.transform = "rotate(180deg)";
+    });
 </script>
 
 

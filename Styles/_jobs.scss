@@ -80,10 +80,65 @@ $darktext: rgb(121, 121, 121);
             flex-direction: column;
             justify-content: flex-start;
             
-            h3{
+            .sort{
+                padding: 1rem 0rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                h3{
+                    font-size: 1.5rem;
+                }
+                i{
+                    color: $color1;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+
+            }
+            .sortCard{
+                display: none;
                 width: 100%;
-                font-size: 1.5rem;
-                text-decoration: underline;
+                .sortAtoZ,.sortZtoA,.sortPriceLowHigh,.sortPriceHighLow{
+                    width: 100%;
+                    margin-bottom: .5rem;
+                    padding: .5rem 0rem;
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-size: 1rem;
+                    p{
+                        font-size: .9rem;
+                        margin-left: 1rem;
+                        font-weight: bolder;
+                    }
+                    i{
+                        margin-left: .3rem;
+                    }
+
+                    &:hover{
+                        background: white;
+                    }
+                }
+            }
+
+            .filter{
+                border-top: .7px solid lightgrey ;
+                padding: 1rem 0rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                h3{
+                    font-size: 1.5rem;
+                }
+                i{
+                    color: $color1;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
             }
         }
 
