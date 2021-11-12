@@ -4711,20 +4711,38 @@ section .container .login .login-container button:hover {
   display: none;
 }
 
+.dropdownContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: absolute;
+  z-index: 1;
+}
+
 .sessionCardContainer {
-  position: fixed;
-  top: 4.5rem;
-  right: 8.3rem;
+  position: absolute;
+  z-index: 1;
 }
 
 .sessionCardContainer .sessionCard {
   display: none;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background: white;
-  padding: 1.5rem 0rem;
-  width: 23vw;
-  border-radius: 10px;
+  padding: 1rem 0rem;
+  width: 17rem;
+  border-radius: 12px;
 }
 
 .sessionCardContainer .sessionCard #sessionCardCloseP {
@@ -4746,7 +4764,12 @@ section .container .login .login-container button:hover {
 }
 
 .sessionCardContainer .sessionCard .card i {
-  margin: 0rem 0.8rem 0rem 1.5rem;
+  color: black;
+  margin-left: 1rem;
+}
+
+.sessionCardContainer .sessionCard .card i:hover {
+  color: black;
 }
 
 .sessionCardContainer .sessionCard .card:hover {
@@ -4798,33 +4821,32 @@ section .container .login .login-container button:hover {
   content: "";
   position: absolute;
   top: -14%;
-  left: 75%;
+  left: 80%;
   border-width: 0.8rem;
   border-style: solid;
-  margin-left: 0.8rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   border-color: white transparent transparent transparent;
 }
 
 .helpContainer {
-  position: fixed;
-  top: 4rem;
-  right: 15.4rem;
+  position: absolute;
+  z-index: 1;
 }
 
 .helpContainer .helpCard {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   display: none;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: white;
-  padding: 0.5rem 0rem;
-  width: 15rem;
-  border-radius: 10px;
+  width: 10rem;
+  text-align: left;
+  border-radius: 5px;
 }
 
 .helpContainer .helpCard .card {
-  padding: 0.3rem 0rem;
+  border-radius: 5px;
+  padding: 0.5rem;
   cursor: pointer;
   width: 100%;
 }
@@ -4832,7 +4854,6 @@ section .container .login .login-container button:hover {
 .helpContainer .helpCard .card h4 {
   font-weight: lighter;
   font-size: 0.85rem;
-  margin-left: 0.8rem;
 }
 
 .helpContainer .helpCard .card:hover {
@@ -4842,24 +4863,23 @@ section .container .login .login-container button:hover {
 .helpContainer .helpCard::after {
   content: "";
   position: absolute;
-  top: -26%;
-  left: 75%;
+  top: -21%;
+  left: 6%;
   border-width: 0.8rem;
   border-style: solid;
   margin-left: 0.8rem;
+  border-style: solid;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   border-color: white transparent transparent transparent;
 }
 
 .projectCardContainer {
-  position: fixed;
-  top: 3.9rem;
-  right: 19rem;
+  position: absolute;
+  z-index: 1;
 }
 
 .projectCardContainer .projectCard {
-  z-index: 1;
   display: none;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -4888,20 +4908,20 @@ section .container .login .login-container button:hover {
 .projectCardContainer .projectCard::after {
   content: "";
   position: absolute;
-  top: -26%;
+  top: -21%;
   left: 6%;
   border-width: 0.8rem;
   border-style: solid;
   margin-left: 0.8rem;
+  border-style: solid;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   border-color: white transparent transparent transparent;
 }
 
 .talentCardContainer {
-  position: fixed;
-  top: 4rem;
-  right: 24rem;
+  position: absolute;
+  z-index: 1;
 }
 
 .talentCardContainer .talentCard {
@@ -4933,7 +4953,7 @@ section .container .login .login-container button:hover {
 .talentCardContainer .talentCard::after {
   content: "";
   position: absolute;
-  top: -26%;
+  top: -21%;
   left: 6%;
   border-width: 0.8rem;
   border-style: solid;
@@ -4944,9 +4964,8 @@ section .container .login .login-container button:hover {
 }
 
 .jobCardContainer {
-  position: fixed;
-  top: 4rem;
-  right: 28.8rem;
+  position: absolute;
+  z-index: 1;
 }
 
 .jobCardContainer .jobCard {
@@ -4978,7 +4997,7 @@ section .container .login .login-container button:hover {
 .jobCardContainer .jobCard::after {
   content: "";
   position: absolute;
-  top: -20%;
+  top: -19%;
   left: 6%;
   border-width: 0.8rem;
   border-style: solid;
