@@ -255,12 +255,81 @@
                     </div>
                     <div class="FilterBudget">
                         <h3>By Budget</h3>
+                        <div class="filterBudgetCard">
+                            <div class="hourly">
+                                <input type="checkbox"  onclick="toggleHourlyCard()" name="hourly" id="hourly">
+                                <label for="hourly">Hourly</label>
+                            </div>
+                            <div class="hourlyCard">
+                                <div class="ZeroToTwentyFive">
+                                    <input type="checkbox" name="ZeroToTwentyFive" id="ZeroToTwentyFive">
+                                    <label for="ZeroToTwentyFive">$0 - $25</label>
+                                </div>
+                                <div class="TwentySixToFifty">
+                                    <input type="checkbox" name="TwentysixToFifty" id="TwentySixToFifty">
+                                    <label for="TwentySixToFifty">$26 - $50</label>
+                                </div>
+                                <div class="FiftyOneToSeventyfive">
+                                    <input type="checkbox" name="FiftyOneToSeventyfive" id="FiftyOneToSeventyfive">
+                                    <label for="FiftyOneToSeventyfive">$51 - $75</label>
+                                </div>
+                                <div class="seventySixToOneHundred">
+                                    <input type="checkbox" name="seventySixToOneHundred"" id="seventySixToOneHundred"">
+                                    <label for="seventySixToOneHundred"">$76 - $100</label>
+                                </div>
+                                <div class="more">
+                                    <input type="checkbox" name="oneHundredPlus" id="oneHundredPlus">
+                                    <label for="oneHundredPlus">$100+</label>
+                                </div>
+                            </div>
+                            <div class="budget">
+                                <input type="checkbox" onclick="toggleBudgetCard()" name="budget" id="budget">
+                                <label for="budget">Budget</label>
+                            </div>
+                            <div class="budgetCard">
+                                <div class="ZeroToNinetyNine">
+                                    <input type="checkbox" name="ZeroToNinetyNine" id="ZeroToNinetyNine">
+                                    <label for="ZeroToNinetyNine">$0 - $99</label>
+                                </div>
+                                <div class="OneHundredOneToOneHundredNinetyNine">
+                                    <input type="checkbox" name="OneHundredOneToOneHundredNinetyNine" id="OneHundredOneToOneHundredNinetyNine">
+                                    <label for="OneHundredOneToOneHundredNinetyNine">$100 - $199</label>
+                                </div>
+                                <div class="TwoHundredOneToTwoeHundredNinetyNine">
+                                    <input type="checkbox" name="TwoHundredOneToTwoeHundredNinetyNine" id="TwoHundredOneToTwoeHundredNinetyNine">
+                                    <label for="TwoHundredOneToTwoeHundredNinetyNine">$200 - $299</label>
+                                </div>
+                                <div class="threeHundredToThreeHundredNinetyNine">
+                                    <input type="checkbox" name="threeHundredToThreeHundredNinetyNine" id="threeHundredToThreeHundredNinetyNine">
+                                    <label for="threeHundredToThreeHundredNinetyNine">$300 - $399</label>
+                                </div>
+                                <div class="fourHundredToFourHundredNinetyNine">
+                                    <input type="checkbox" name="fourHundredToFourHundredNinetyNine" id="fourHundredToFourHundredNinetyNine">
+                                    <label for="fourHundredToFourHundredNinetyNine">$400 - $499</label>
+                                </div>
+                                <div class="fiveHundredPlus">
+                                    <input type="checkbox" name="fiveHundredPlus" id="fiveHundredPlus">
+                                    <label for="fiveHundredPlus">$500+</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="FilterSkill">
                         <h3>By Skill</h3>
+
                     </div>
                     <div class="FilterLocation">
                         <h3>By Location</h3>
+                        <div class="filterLocationCard">
+                            <div class="worldwide">
+                                <input type="checkbox" name="worldwide" id="worldwide">
+                                <label for="worldwide">Worldwide</label>
+                            </div>
+                            <div class="us">
+                                <input type="checkbox" name="us" id="us">
+                                <label for="us">United States</label>
+                            </div>
+                        </div>
                     </div>
                     <div class="FilterProjectSize">
                         <h3>By Project Size</h3>
@@ -520,6 +589,26 @@ function toggleFilterCard(){
         filterArrow.style.transform = "rotate(360deg)";
     }
 }
+
+function toggleHourlyCard() {
+        var hourlyCard = document.querySelector(".hourlyCard");
+        if (getComputedStyle(hourlyCard).display === "none") {
+            hourlyCard.style.display = "inline-block";
+        } else {
+            hourlyCard.style.display = "none";
+        }
+}
+
+function toggleBudgetCard() {
+        var budgetCard = document.querySelector(".budgetCard");
+        if (getComputedStyle(budgetCard).display === "none") {
+            budgetCard.style.display = "inline-block";
+        } else {
+            budgetCard.style.display = "none";
+        }
+}
+
+
 </script>
 
 
