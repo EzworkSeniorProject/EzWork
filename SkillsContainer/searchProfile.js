@@ -1357,6 +1357,9 @@ AllSkills.forEach((c) => {
   }
 });
 
+//Sort in order
+AllSkills2.sort();
+
 const AllSkillsDatalist = document.getElementById("allskills");
 
 for (let i = 0; i < AllSkills2.length; i++) {
@@ -1365,6 +1368,16 @@ for (let i = 0; i < AllSkills2.length; i++) {
   option.value = AllSkills2[i];
 
   AllSkillsDatalist.appendChild(option);
+}
+
+const filterSkills = document.getElementById("filterSkills");
+for (let i = 0; i < AllSkills2.length; i++) {
+  var option = document.createElement("option");
+
+  option.value = AllSkills2[i];
+  option.innerText = AllSkills2[i];
+
+  filterSkills.appendChild(option);
 }
 
 const mobileSearchCard = document.querySelector(".mobileSearchCard");
