@@ -4568,9 +4568,6 @@ section .container .login .login-container button:hover {
 
 /*Profiles*/
 .profile-header-container {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background: #1d4354;
 }
@@ -4712,299 +4709,8 @@ section .container .login .login-container button:hover {
 }
 
 .dropdownContent {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  position: absolute;
-  z-index: 1;
-}
-
-.sessionCardContainer {
-  position: absolute;
-  z-index: 1;
-}
-
-.sessionCardContainer .sessionCard {
-  display: none;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  background: white;
-  padding: 1rem 0rem;
-  width: 17rem;
-  border-radius: 12px;
-}
-
-.sessionCardContainer .sessionCard #sessionCardCloseP {
-  width: 100%;
-  text-align: end;
-}
-
-.sessionCardContainer .sessionCard #sessionCardCloseP i {
-  font-size: 1.3rem;
-  cursor: pointer;
-  display: inline-block;
-  color: #797979;
-}
-
-.sessionCardContainer .sessionCard .card {
-  padding: 0.5rem 0rem;
-  cursor: pointer;
-  width: 100%;
-}
-
-.sessionCardContainer .sessionCard .card i {
-  color: black;
-  margin-left: 1rem;
-}
-
-.sessionCardContainer .sessionCard .card i:hover {
-  color: black;
-}
-
-.sessionCardContainer .sessionCard .card:hover {
-  background: lightgrey;
-}
-
-.sessionCardContainer .sessionCard .card1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  pointer-events: none;
-}
-
-.sessionCardContainer .sessionCard .card1 .image img {
-  margin-left: 1rem;
-  width: 2rem;
-  height: 2rem;
-}
-
-.sessionCardContainer .sessionCard .card1 .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0rem 0.5rem;
-}
-
-.sessionCardContainer .sessionCard .card1 .name #name {
-  width: 100%;
-  font-size: 1rem;
-  color: #0a345e;
-  font-weight: bolder;
-}
-
-.sessionCardContainer .sessionCard .card1 .name #type {
-  width: 100%;
-  font-size: 0.8rem;
-  color: #797979;
-}
-
-.sessionCardContainer .sessionCard::after {
-  content: "";
-  position: absolute;
-  top: -14%;
-  left: 80%;
-  border-width: 0.8rem;
-  border-style: solid;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  border-color: white transparent transparent transparent;
-}
-
-.helpContainer {
-  position: absolute;
-  z-index: 1;
-}
-
-.helpContainer .helpCard {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  display: none;
-  background: white;
-  width: 10rem;
-  text-align: left;
-  border-radius: 5px;
-}
-
-.helpContainer .helpCard .card {
-  border-radius: 5px;
-  padding: 0.5rem;
-  cursor: pointer;
-  width: 100%;
-}
-
-.helpContainer .helpCard .card h4 {
-  font-weight: lighter;
-  font-size: 0.85rem;
-}
-
-.helpContainer .helpCard .card:hover {
-  background: lightgrey;
-}
-
-.helpContainer .helpCard::after {
-  content: "";
-  position: absolute;
-  top: -21%;
-  left: 6%;
-  border-width: 0.8rem;
-  border-style: solid;
-  margin-left: 0.8rem;
-  border-style: solid;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  border-color: white transparent transparent transparent;
-}
-
-.projectCardContainer {
-  position: absolute;
-  z-index: 1;
-}
-
-.projectCardContainer .projectCard {
-  display: none;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background: white;
-  padding: 0.5rem 0rem;
-  width: 15rem;
-  border-radius: 10px;
-}
-
-.projectCardContainer .projectCard .card {
-  padding: 0.3rem 0rem;
-  cursor: pointer;
-  width: 100%;
-}
-
-.projectCardContainer .projectCard .card h4 {
-  font-weight: lighter;
-  font-size: 0.9rem;
-  margin-left: 0.8rem;
-}
-
-.projectCardContainer .projectCard .card:hover {
-  background: lightgrey;
-}
-
-.projectCardContainer .projectCard::after {
-  content: "";
-  position: absolute;
-  top: -21%;
-  left: 6%;
-  border-width: 0.8rem;
-  border-style: solid;
-  margin-left: 0.8rem;
-  border-style: solid;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  border-color: white transparent transparent transparent;
-}
-
-.talentCardContainer {
-  position: absolute;
-  z-index: 1;
-}
-
-.talentCardContainer .talentCard {
-  display: none;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background: white;
-  padding: 0.5rem 0rem;
-  width: 15rem;
-  border-radius: 10px;
-}
-
-.talentCardContainer .talentCard .card {
-  padding: 0.3rem 0rem;
-  cursor: pointer;
-  width: 100%;
-}
-
-.talentCardContainer .talentCard .card h4 {
-  font-weight: lighter;
-  font-size: 0.9rem;
-  margin-left: 0.8rem;
-}
-
-.talentCardContainer .talentCard .card:hover {
-  background: lightgrey;
-}
-
-.talentCardContainer .talentCard::after {
-  content: "";
-  position: absolute;
-  top: -21%;
-  left: 6%;
-  border-width: 0.8rem;
-  border-style: solid;
-  margin-left: 0.8rem;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  border-color: white transparent transparent transparent;
-}
-
-.jobCardContainer {
-  position: absolute;
-  z-index: 1;
-}
-
-.jobCardContainer .jobCard {
-  display: none;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background: white;
-  padding: 0.5rem 0rem;
-  width: 15rem;
-  border-radius: 10px;
-}
-
-.jobCardContainer .jobCard .card {
-  padding: 0.3rem 0rem;
-  cursor: pointer;
-  width: 100%;
-}
-
-.jobCardContainer .jobCard .card h4 {
-  font-weight: lighter;
-  font-size: 0.9rem;
-  margin-left: 0.8rem;
-}
-
-.jobCardContainer .jobCard .card:hover {
-  background: lightgrey;
-}
-
-.jobCardContainer .jobCard::after {
-  content: "";
-  position: absolute;
-  top: -19%;
-  left: 6%;
-  border-width: 0.8rem;
-  border-style: solid;
-  margin-left: 0.8rem;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  border-color: white transparent transparent transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .profileFooter {
@@ -21005,6 +20711,7 @@ li {
 
 .jobs .jobs-container .sortMenu .sort {
   padding: 1rem 0rem;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21024,10 +20731,18 @@ li {
   font-size: 1.5rem;
 }
 
+.jobs .jobs-container .sortMenu .sort h3:hover {
+  text-decoration: underline;
+}
+
 .jobs .jobs-container .sortMenu .sort i {
   color: #0a345e;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.jobs .jobs-container .sortMenu .sort:hover {
+  color: #054e97;
 }
 
 .jobs .jobs-container .sortMenu .sortCard {
@@ -21068,9 +20783,11 @@ li {
 
 .jobs .jobs-container .sortMenu .sortCard .sortAtoZ:hover, .jobs .jobs-container .sortMenu .sortCard .sortZtoA:hover, .jobs .jobs-container .sortMenu .sortCard .sortPriceLowHigh:hover, .jobs .jobs-container .sortMenu .sortCard .sortPriceHighLow:hover {
   background: white;
+  color: #054e97;
 }
 
 .jobs .jobs-container .sortMenu .filter {
+  cursor: pointer;
   border-top: .7px solid lightgrey;
   padding: 1rem 0rem;
   display: -webkit-box;
@@ -21092,10 +20809,54 @@ li {
   font-size: 1.5rem;
 }
 
+.jobs .jobs-container .sortMenu .filter h3:hover {
+  text-decoration: underline;
+}
+
 .jobs .jobs-container .sortMenu .filter i {
   color: #0a345e;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.jobs .jobs-container .sortMenu .filter:hover {
+  color: #054e97;
+}
+
+.jobs .jobs-container .sortMenu .filterCard {
+  display: none;
+  width: 100%;
+}
+
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize, .jobs .jobs-container .sortMenu .filterCard .FilterLocation, .jobs .jobs-container .sortMenu .filterCard .FilterSkill, .jobs .jobs-container .sortMenu .filterCard .FilterBudget, .jobs .jobs-container .sortMenu .filterCard .FilterExperience {
+  padding: 1rem 0rem;
+  border: .7px solid lightgrey;
+  border-left: none;
+  border-right: none;
+}
+
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType h3, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize h3, .jobs .jobs-container .sortMenu .filterCard .FilterLocation h3, .jobs .jobs-container .sortMenu .filterCard .FilterSkill h3, .jobs .jobs-container .sortMenu .filterCard .FilterBudget h3, .jobs .jobs-container .sortMenu .filterCard .FilterExperience h3 {
+  font-size: 1.2rem;
+  color: #0a345e;
+}
+
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard {
+  padding: .5rem 0rem;
+}
+
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .expert {
+  padding: .5rem 0rem;
+}
+
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .expert label {
+  margin-left: .5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #2e2e2e;
+}
+
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .expert label:hover {
+  text-decoration: underline;
 }
 
 .jobs .jobs-container .allJobs {

@@ -82,17 +82,24 @@ $darktext: rgb(121, 121, 121);
             
             .sort{
                 padding: 1rem 0rem;
+                cursor: pointer;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
                 h3{
                     font-size: 1.5rem;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
                 i{
                     color: $color1;
                     font-size: 1.5rem;
                     cursor: pointer;
+                }
+                &:hover{
+                    color: $lightColor;
                 }
 
             }
@@ -120,11 +127,13 @@ $darktext: rgb(121, 121, 121);
 
                     &:hover{
                         background: white;
+                        color: $lightColor;
                     }
                 }
             }
 
             .filter{
+                cursor: pointer;
                 border-top: .7px solid lightgrey ;
                 padding: 1rem 0rem;
                 display: flex;
@@ -133,12 +142,53 @@ $darktext: rgb(121, 121, 121);
                 justify-content: space-between;
                 h3{
                     font-size: 1.5rem;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
                 i{
                     color: $color1;
                     font-size: 1.5rem;
                     cursor: pointer;
                 }
+                &:hover{
+                    color: $lightColor;
+                }
+
+            }
+
+            .filterCard{
+                display: none;
+                width: 100%;
+                .FilterProjectType,.FilterProjectSize,.FilterLocation,.FilterSkill,.FilterBudget,.FilterExperience{
+                    padding: 1rem 0rem;
+                    border: .7px solid lightgrey;
+                    border-left: none;
+                    border-right: none;
+
+                    h3{
+                        font-size: 1.2rem;
+                        color: $color1;
+                    }
+
+                    .experienceCard{
+                        padding: .5rem 0rem;
+                        .entry,.intermediate,.expert{
+                            padding: .5rem 0rem;
+
+                            label{
+                                margin-left: .5rem;
+                                cursor: pointer;
+                                font-size: 1rem;
+                                color: rgb(46, 46, 46);
+
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }                    
             }
         }
 

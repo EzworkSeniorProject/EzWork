@@ -208,7 +208,7 @@
 
         <div class="jobs-container">
             <div class="sortMenu">
-                <div class="sort" onmousedown="toggleSortCard()">
+                <div class="sort" onclick="toggleSortCard()">
                     <h3>Sort</h3>
                     <i class="fa fa-sort-desc" id="sortArrow" aria-hidden="true"></i>
                 </div>
@@ -230,12 +230,44 @@
                         <p>Price: High to Low</p>
                     </div>
                 </div>
-                <div class="filter">
+                <div class="filter" onclick="toggleFilterCard()">
                     <h3>Filter</h3>
                     <i class="fa fa-sort-desc" id="filterArrow" aria-hidden="true"></i>
                 </div>
                 <div class="filterCard">
-
+                    <div class="FilterExperience">
+                        <h3>By Experience</h3>
+                        <div class="experienceCard">
+                            <div class="entry">
+                                <input type="checkbox" name="entry" id="entry">
+                                <label for="entry">Entry</label>
+                            </div>
+                            <div class="intermediate">
+                                <input type="checkbox" name="intermediate" id="intermediate">
+                                <label for="intermediate">Intermediate</label>
+                            </div>
+                            <div class="expert">
+                                <input type="checkbox" name="expert" id="expert">
+                                <label for="expert">Expert</label>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="FilterBudget">
+                        <h3>By Budget</h3>
+                    </div>
+                    <div class="FilterSkill">
+                        <h3>By Skill</h3>
+                    </div>
+                    <div class="FilterLocation">
+                        <h3>By Location</h3>
+                    </div>
+                    <div class="FilterProjectSize">
+                        <h3>By Project Size</h3>
+                    </div>
+                    <div class="FilterProjectType">
+                        <h3>By Project Type</h3>
+                    </div>
                 </div>
             </div>
 
@@ -476,10 +508,18 @@ function toggleJobCard(){
 }
 
 
-    const filterArrow = document.getElementById('filterArrow');
-    filterArrow.addEventListener('click',()=>{
+const filterArrow = document.getElementById('filterArrow');
+
+function toggleFilterCard(){
+    const filterCard = document.querySelector('.filterCard'); 
+    if (getComputedStyle(filterCard).display === "none") {
         filterArrow.style.transform = "rotate(180deg)";
-    });
+        filterCard.style.display = "inline-block";
+    } else {
+        filterCard.style.display = "none";
+        filterArrow.style.transform = "rotate(360deg)";
+    }
+}
 </script>
 
 

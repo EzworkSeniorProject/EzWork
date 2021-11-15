@@ -73,6 +73,7 @@
 }
 .jobs .jobs-container .sortMenu .sort {
   padding: 1rem 0rem;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,10 +82,16 @@
 .jobs .jobs-container .sortMenu .sort h3 {
   font-size: 1.5rem;
 }
+.jobs .jobs-container .sortMenu .sort h3:hover {
+  text-decoration: underline;
+}
 .jobs .jobs-container .sortMenu .sort i {
   color: #0a345e;
   font-size: 1.5rem;
   cursor: pointer;
+}
+.jobs .jobs-container .sortMenu .sort:hover {
+  color: #054e97;
 }
 .jobs .jobs-container .sortMenu .sortCard {
   display: none;
@@ -111,8 +118,10 @@
 }
 .jobs .jobs-container .sortMenu .sortCard .sortAtoZ:hover, .jobs .jobs-container .sortMenu .sortCard .sortZtoA:hover, .jobs .jobs-container .sortMenu .sortCard .sortPriceLowHigh:hover, .jobs .jobs-container .sortMenu .sortCard .sortPriceHighLow:hover {
   background: white;
+  color: #054e97;
 }
 .jobs .jobs-container .sortMenu .filter {
+  cursor: pointer;
   border-top: 0.7px solid lightgrey;
   padding: 1rem 0rem;
   display: flex;
@@ -123,10 +132,45 @@
 .jobs .jobs-container .sortMenu .filter h3 {
   font-size: 1.5rem;
 }
+.jobs .jobs-container .sortMenu .filter h3:hover {
+  text-decoration: underline;
+}
 .jobs .jobs-container .sortMenu .filter i {
   color: #0a345e;
   font-size: 1.5rem;
   cursor: pointer;
+}
+.jobs .jobs-container .sortMenu .filter:hover {
+  color: #054e97;
+}
+.jobs .jobs-container .sortMenu .filterCard {
+  display: none;
+  width: 100%;
+}
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize, .jobs .jobs-container .sortMenu .filterCard .FilterLocation, .jobs .jobs-container .sortMenu .filterCard .FilterSkill, .jobs .jobs-container .sortMenu .filterCard .FilterBudget, .jobs .jobs-container .sortMenu .filterCard .FilterExperience {
+  padding: 1rem 0rem;
+  border: 0.7px solid lightgrey;
+  border-left: none;
+  border-right: none;
+}
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType h3, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize h3, .jobs .jobs-container .sortMenu .filterCard .FilterLocation h3, .jobs .jobs-container .sortMenu .filterCard .FilterSkill h3, .jobs .jobs-container .sortMenu .filterCard .FilterBudget h3, .jobs .jobs-container .sortMenu .filterCard .FilterExperience h3 {
+  font-size: 1.2rem;
+  color: #0a345e;
+}
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard {
+  padding: 0.5rem 0rem;
+}
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .expert, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .entry, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .intermediate, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .expert {
+  padding: 0.5rem 0rem;
+}
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .expert label, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .entry label, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .intermediate label, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .expert label {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #2e2e2e;
+}
+.jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectType .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterProjectSize .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterLocation .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterSkill .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterBudget .experienceCard .expert label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .entry label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .intermediate label:hover, .jobs .jobs-container .sortMenu .filterCard .FilterExperience .experienceCard .expert label:hover {
+  text-decoration: underline;
 }
 .jobs .jobs-container .allJobs {
   grid-area: 1/2/2/3;
